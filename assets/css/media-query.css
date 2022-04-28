@@ -1,0 +1,29 @@
+@media screen and (max-width: 1366px) {
+  .nav-container {
+    width: 90%;
+  }
+
+  .header .header-container {
+    width: 90%;
+    height: 95vh;
+  }
+
+  .header .header-container .header-text .h1 {
+    font-size: var(--text-5xl);
+    line-height: var(--text-5xl);
+  }
+
+  .header .header-container .header-text .paragraph {
+    font-size: var(--text-xl);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container .networking-nav {
+    display: none;
+  }
+
+  .nav-container .link-container {
+    width: 18rem;
+  }
+}

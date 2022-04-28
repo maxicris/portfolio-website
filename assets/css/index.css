@@ -1,0 +1,256 @@
+* {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--gray-900);
+  color: var(--gray-10);
+}
+
+/* -------------- Comienzo del nav bar -------------- */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  /* background-color: var(--gray-800-50); */
+  backdrop-filter: blur(6px);
+  height: 5.6rem;
+  width: 100%;
+  /* box-shadow: 0px 1px 1px 0px var(--gray-700); */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 128rem;
+}
+
+.nav-container .logo {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+}
+
+.nav-container .networking-nav {
+  display: flex;
+  width: 22rem;
+}
+
+.nav-container .networking {
+  margin-right: 4rem;
+}
+
+.nav-container .link-container {
+  display: flex;
+  width: 22rem;
+  justify-content: space-between;
+}
+
+.nav-container .link-container a {
+  text-decoration: none;
+  color: var(--gray-10);
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+}
+
+/* -------------- Comienzo del Header -------------- */
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header .header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128rem;
+  height: 90vh;
+}
+
+.header .header-container .header-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+}
+
+.header .header-container .header-text .h1 {
+  font-size: var(--text-8xl);
+  font-weight: var(--font-bold);
+  line-height: 8.8rem;
+  margin-bottom: 5.6rem;
+}
+
+.header .header-container .header-text .h1 .name-color {
+  color: var(--primary-400);
+}
+
+.header .header-container .header-text .paragraph {
+  color: var(--gray-300);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-regular);
+  margin-bottom: 6.4rem;
+}
+
+.networking-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.networking-container .networking {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+}
+
+.networking-container .networking a {
+  text-decoration: none;
+  color: var(--gray-10);
+}
+
+.networking-container .networking img {
+  margin-right: 1.6rem;
+}
+
+.header .elipse {
+  position: absolute;
+  z-index: -1;
+  background-color: var(--primary-400-50);
+  border-radius: 50%;
+  filter: blur(20rem);
+  width: 45rem;
+  height: 45rem;
+  left: 24rem;
+  top: 16rem;
+}
+
+.header .elipse.dos {
+  background-color: rgba(204, 0, 255, 0.4);
+  left: 135rem;
+  top: 30rem;
+}
+
+/* -------------- Comienzo de las Cards -------------- */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .case-study {
+  display: flex;
+  width: 128rem;
+  border-radius: var(--rounded-3xl);
+  margin-bottom: 16rem;
+  border: 2px solid var(--gray-700);
+}
+
+.main .case-study .cover {
+  border-radius: var(--rounded-3xl) 0 0 var(--rounded-3xl);
+}
+
+.main .case-study .case-study-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4.4rem 6.4rem;
+  align-items: center;
+}
+
+.main .case-study .case-study-container .tagline {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  background-color: var(--gray-600);
+  padding: 0.4rem 2.4rem;
+  border-radius: var(--rounded);
+}
+
+.main .case-study .case-study-container .text-container-case-study {
+  text-align: center;
+}
+
+.main .case-study .case-study-container .text-container-case-study h2 {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  padding-bottom: 2.4rem;
+}
+
+.main .case-study .case-study-container .text-container-case-study p {
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  color: var(--gray-300);
+  text-align: center;
+}
+.main .case-study .case-study-container .view-proyect-button {
+  display: flex;
+}
+.main .case-study .case-study-container .button {
+  background-color: var(--gray-900);
+  color: var(--gray-10);
+  border: none;
+  padding: 0;
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+}
+
+.main .case-study .cover2 {
+  border-radius: 0 var(--rounded-3xl) var(--rounded-3xl) 0;
+}
+
+/* -------------- Comienzo del Footer -------------- */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--gray-800);
+}
+
+.footer .footer-container {
+  display: flex;
+  align-items: center;
+  width: 128rem;
+  margin: 8rem 0 8rem 0;
+}
+
+.footer .footer-container .avatar {
+  text-align: center;
+  width: 15%;
+}
+
+.footer .footer-container .avatar h3 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  margin-top: 1.2rem;
+}
+
+.footer .footer-container .avatar p {
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  color: var(--gray-300);
+}
+
+.footer .footer-container .description-footer {
+  margin-left: 36rem;
+  width: 100%;
+}
+
+.footer .footer-container .description-footer p {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  margin-bottom: 4rem;
+}
