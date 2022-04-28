@@ -1,8 +1,10 @@
 @media screen and (max-width: 1366px) {
+  /* ----------------- Comienzo del nav-bar ----------------- */
   .nav-container {
-    width: 90%;
+    width: 94%;
   }
 
+  /* ----------------- Comienzo del header ----------------- */
   .header .header-container {
     width: 90%;
     height: 95vh;
@@ -18,12 +20,17 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .nav-container .networking-nav {
-    display: none;
+@media screen and (max-width: 640px) {
+  /* ----------------- Comienzo del nav-bar ----------------- */
+  .nav-container .logo {
+    font-size: var(--text-xl);
   }
 
   .nav-container .link-container {
-    width: 18rem;
+    width: 17rem;
+  }
+
+  .nav-container .link-container a {
+    font-size: var(--text-sm);
   }
 }
