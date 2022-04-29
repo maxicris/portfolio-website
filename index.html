@@ -34,29 +34,35 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/5918e018cc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <nav class="nav">
-      <div class="nav-container">
-        <!-- <div class="networking-nav">
-          <div class="networking">
-            <img src="./assets/images/twitter.svg" alt="" />
-          </div>
-          <div class="networking">
-            <img src="./assets/images/email.svg" alt="" />
-          </div>
-          <div class="networking">
-            <img src="./assets/images/linkedin.svg" alt="" />
-          </div>
-        </div> -->
+      <div class="nav-desktop" id="nav-desktop">
         <span class="logo">Maxi Cris</span>
-        <div class="link-container">
+        <div id="link-container">
           <a href="">Sobre mi</a>
           <a href="">Contacto</a>
         </div>
       </div>
+      <div class="nav-desktop nav-mobile">
+        <span class="logo">Maxi Cris</span>
+        <a
+          style="font-size: 22px"
+          id="menu-mobile"
+          class="icon"
+          onclick="myFunction()"
+        >
+          <i class="fa-solid fa-grip-lines"></i>
+        </a>
+        <div class="div" id="nav-mobile"></div>
+      </div>
     </nav>
+
     <header class="header">
       <div class="header-container">
         <div class="header-text">
@@ -153,5 +159,15 @@
         </div>
       </div>
     </footer> -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav-mobile");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

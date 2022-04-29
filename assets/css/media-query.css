@@ -1,6 +1,6 @@
 @media screen and (max-width: 1366px) {
   /* ----------------- Comienzo del nav-bar ----------------- */
-  .nav-container {
+  .nav-desktop {
     width: 94%;
   }
 
@@ -22,15 +22,29 @@
 
 @media screen and (max-width: 640px) {
   /* ----------------- Comienzo del nav-bar ----------------- */
-  .nav-container .logo {
+  .nav .nav-desktop {
+    display: none;
+  }
+
+  .nav .nav-mobile {
+    display: flex;
+  }
+
+  .nav-mobile .logo {
     font-size: var(--text-xl);
   }
 
-  .nav-container .link-container {
-    width: 17rem;
+  .nav-container #link-container a {
+    font-size: var(--text-sm);
   }
 
-  .nav-container .link-container a {
-    font-size: var(--text-sm);
+  .nav .nav-mobile .div {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+    position: absolute;
+    top: 64px;
+    left: 0px;
   }
 }
