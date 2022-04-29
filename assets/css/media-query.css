@@ -24,14 +24,11 @@
   /* ----------------- Comienzo del nav-bar ----------------- */
   .nav .nav-desktop {
     display: none;
+    width: 88%;
   }
 
   .nav .nav-mobile {
     display: flex;
-  }
-
-  .nav-mobile .logo {
-    font-size: var(--text-xl);
   }
 
   .nav-container #link-container a {
