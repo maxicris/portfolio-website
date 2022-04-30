@@ -60,6 +60,37 @@ body {
   display: none;
 }
 
+.nav .nav-mobile .div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .nav-mobile .div .container-links-mobile {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav .nav-mobile .div a {
+  text-decoration: none;
+  color: var(--gray-10);
+  font-size: var(--text-xl);
+  font-weight: var(--font-medium);
+}
+
+.networking-nav {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 112px;
+}
+
 /* -------------- Comienzo del Header -------------- */
 
 .header {
@@ -253,4 +284,80 @@ body {
   font-size: var(--text-2xl);
   font-weight: var(--font-semibold);
   margin-bottom: 4rem;
+}
+/* __________________________________________________________ */
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.menu-toggle {
+  justify-self: end;
+  margin-right: 25px;
+  display: none;
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+#mobile-menu.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: start;
+  top: 55px;
+  background-color: #fff;
+  width: 100%;
+  height: calc(100vh - 55px);
+  transform: translate(-101%);
+  text-align: center;
+  overflow: hidden;
+}
+
+.navbar li {
+  padding: 15px;
+}
+
+.navbar li:first-child {
+  margin-top: 50px;
+}
+
+.navbar li a {
+  font-size: 1rem;
+}
+
+.menu-toggle,
+.bar {
+  display: block;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  transform: translate(0%) !important;
 }
