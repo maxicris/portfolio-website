@@ -9,11 +9,11 @@
     width: 90%;
     height: 95vh;
   }
-
+  /* 
   .header-text .h1 {
-    /* font-size: var(--text-5xl); */
-    /* line-height: var(--text-5xl); */
-  }
+    font-size: var(--text-5xl);
+    line-height: var(--text-5xl);
+  } */
 
   .header-text .paragraph {
     font-size: var(--text-xl);
