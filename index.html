@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Document</title>
+    <title>Maxi Cris</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link
       rel="stylesheet preload"
       as="style"
@@ -43,110 +44,81 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <nav class="nav">
       <div class="nav-desktop" id="nav-desktop">
         <span class="logo">Maxi Cris</span>
-        <div id="link-container">
+        <div class="container-links">
           <a href="">Sobre mi</a>
           <a href="">Contacto</a>
         </div>
       </div>
       <div class="nav-desktop nav-mobile">
         <span class="logo">Maxi Cris</span>
-        <div class="menu-toggle" id="mobile-menu" onclick="myFunction()">
+        <div class="menu-toggle" id="menu-mobile" onclick="myFunction()">
           <span class="bar"></span>
           <span class="bar" id="bar-invi"></span>
           <span class="bar"></span>
         </div>
-        <div class="div" id="nav-mobile">
+        <div class="nav-menu-mobile-actived" id="nav-mobile">
           <div class="container-links-mobile">
-            <a href="#"> Sobre Mi</a>
-            <a href="#"> Contacto</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Contacto</a>
           </div>
-          <div class="networking-nav">
+          <div class="nav-networking-mobile">
             <a style="font-size: 32px" href="https://twitter.com/_maxicris">
               <i class="fa-brands fa-twitter"></i>
             </a>
-            <a style="font-size: 28px" href="https://twitter.com/_maxicris">
+            <a style="font-size: 32px" href="https://twitter.com/_maxicris">
               <i class="fa-solid fa-envelope"></i>
             </a>
-            <a style="font-size: 36px" href="https://twitter.com/_maxicris">
+            <a style="font-size: 32px" href="https://twitter.com/_maxicris">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </div>
         </div>
       </div>
     </nav>
-
-    <header class="header">
-      <div class="header-container">
-        <div class="header-text">
-          <h1 class="h1">
-            Hola! Soy <span class="name-color">Maxi Cris</span> <br />
-            Product Designer viviendo <br />
-            en Argentina
-          </h1>
-          <p class="paragraph">
-            Construyo soluciones a problemas reales, creando experiencias
-            accesibles y agradables a través de interfaces e interacciones.
-          </p>
-          <div class="networking-container">
-            <div class="networking">
-              <img src="./assets/images/twitter.svg" alt="" />
-              <a href="">Twitter</a>
-            </div>
-            <div class="networking">
-              <img src="./assets/images/linkedin.svg" alt="" />
-              <a href="">LinkedIn</a>
-            </div>
-            <div class="networking">
-              <img src="./assets/images/email.svg" alt="" />
-              <a href="">Email</a>
-            </div>
-          </div>
-        </div>
+    <header class="header-text">
+      <h1 class="h1">
+        Hola! Soy <span class="name-color">Maxi</span> <br />UI Designer
+        viviendo
+        <br />
+        en Argentina
+      </h1>
+      <p class="paragraph">
+        Construyo soluciones a problemas reales, creando experiencias accesibles
+        y agradables a través de interfaces e interacciones
+      </p>
+      <div class="networking-container">
+        <button
+          class="btn-contact"
+          onclick="window.location.href='mailto:hi@maxicris.com'"
+        >
+          <i style="font-size: 20px" class="fa-solid fa-envelope"></i>Contactar
+        </button>
+        <a
+          class="network"
+          style="font-size: 20px"
+          href="https://twitter.com/_maxicris"
+          target="_blank"
+        >
+          <i class="fa-brands fa-twitter"></i>
+          <p>Twitter</p>
+        </a>
+        <a
+          class="network"
+          style="font-size: 20px"
+          href="https://www.linkedin.com/in/maxicris/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i>
+          <p>LinkedIn</p>
+        </a>
       </div>
       <!-- <div class="elipse"></div> -->
-      <!-- <div class="elipse dos"></div> -->
+      <div class="elipse dos"></div>
     </header>
-    <!-- <main class="main">
-      <section class="case-study">
-        <img class="cover" src="./assets/images/cover.png" alt="" />
-        <div class="case-study-container">
-          <span class="tagline">Wallet</span>
-          <div class="text-container-case-study">
-            <h2>Pretium nulla amet</h2>
-            <p>
-              Tortor nunc leo, interdum vulputate dolor in vivamus arcu. Sodales
-              sed dui mauris, augue sit consectetur.
-            </p>
-          </div>
-          <div class="view-proyect-button">
-            <button class="button">Ver proyecto</button>
-            <img src="./assets/images/arrow-right.svg" alt="" />
-          </div>
-        </div>
-      </section>
-      <section class="case-study">
-        <div class="case-study-container">
-          <span class="tagline">Wallet</span>
-          <div class="text-container-case-study">
-            <h2>Pretium nulla amet</h2>
-            <p>
-              Tortor nunc leo, interdum vulputate dolor in vivamus arcu. Sodales
-              sed dui mauris, augue sit consectetur.
-            </p>
-          </div>
-          <div class="view-proyect-button">
-            <button class="button">Ver proyecto</button>
-            <img src="./assets/images/arrow-right.svg" alt="" />
-          </div>
-        </div>
-        <img class="cover2" src="./assets/images/cover.png" alt="" />
-      </section>
-    </main> -->
+    <main class="main"></main>
     <!-- <footer class="footer">
       <div class="footer-container">
         <div class="avatar">

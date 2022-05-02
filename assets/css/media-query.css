@@ -5,37 +5,37 @@
   }
 
   /* ----------------- Comienzo del header ----------------- */
-  .header .header-container {
+  .header-container {
     width: 90%;
     height: 95vh;
   }
 
-  .header .header-container .header-text .h1 {
-    font-size: var(--text-5xl);
-    line-height: var(--text-5xl);
+  .header-text .h1 {
+    /* font-size: var(--text-5xl); */
+    /* line-height: var(--text-5xl); */
   }
 
-  .header .header-container .header-text .paragraph {
+  .header-text .paragraph {
     font-size: var(--text-xl);
   }
 }
 
 @media screen and (max-width: 640px) {
   /* ----------------- Comienzo del nav-bar ----------------- */
-  .nav .nav-desktop {
+  .nav-desktop {
     display: none;
     width: 88%;
   }
 
-  .nav .nav-mobile {
+  .nav-mobile {
     display: flex;
   }
 
-  .nav .nav-mobile a {
+  .nav-mobile a {
     cursor: pointer;
   }
 
-  .nav .nav-mobile .div {
+  .nav-mobile .nav-menu-mobile-actived {
     display: none;
     width: 100vw;
     height: 100vh;
@@ -43,5 +43,53 @@
     position: absolute;
     top: 64px;
     left: 0px;
+  }
+  /* ----------------- Comienzo de la animacion del menu mobile ----------------- */
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 2px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  #bar-invi {
+    opacity: 0;
+  }
+
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  #menu-mobile.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-mobile.is-active .bar:nth-child(1) {
+    -webkit-transform: translateY(2px) rotate(45deg);
+    -ms-transform: translateY(2px) rotate(45deg);
+    -o-transform: translateY(2px) rotate(45deg);
+    transform: translateY(2px) rotate(45deg);
+  }
+
+  #menu-mobile.is-active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu-toggle,
+  .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-nav {
+    transform: translate(0%) !important;
   }
 }
