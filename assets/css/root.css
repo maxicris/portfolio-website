@@ -1,17 +1,18 @@
 :root {
-  --gray-10: #ffffff;
   --gray-50: #fafafa;
-  --gray-100: ;
-  --gray-200: #dddee4;
-  --gray-300: #c3c5d0;
-  --gray-400: #999bae;
-  --gray-500: #6f728c;
-  --gray-600: #54576a;
-  --gray-700: #404251;
-  --gray-800: #1e1e23;
+  --gray-100: #f4f4f5;
+  --gray-200: #e4e4e7;
+  --gray-300: #d4d4d8;
+  --gray-400: #a1a1aa;
+  --gray-500: #71717a;
+  --gray-600: #52525b;
+  --gray-700: #3f3f46;
+  --gray-800: #27272a;
   --gray-800-50: rgba(30, 30, 35, 0.5);
   --gray-900-80: rgba(20, 20, 25, 0.8);
-  --gray-900: rgb(15, 15, 18);
+  --gray-900: #18181b;
+  --gray-990: #0e0e11;
+
   --primary-400: #cc4a49;
   --primary-400-50: rgb(204, 74, 73, 0.7);
 
