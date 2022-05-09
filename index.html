@@ -54,7 +54,6 @@
       type="text/css"
       href="./assets/css/media-query.css"
     />
-    <link rel="stylesheet" href="assets/css/animsition.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -69,9 +68,9 @@
   <body>
     <nav class="nav">
       <div class="nav-desktop" id="nav-desktop">
-        <a href="/index.html" class="logo link">Maxi Cris</a>
+        <a href="./index.html" class="logo link">Maxi Cris</a>
         <div class="links-container">
-          <a class="link" href="/about.html">Sobre mi</a>
+          <a class="link" href="./about.html">Sobre mi</a>
           <a class="link" href="#contact-form">Contacto</a>
         </div>
       </div>
@@ -112,13 +111,17 @@
         y agradables a través de interfaces e interacciones
       </p>
       <div class="networking-container">
-        <button
+        <!-- <button
           class="btn-contact"
           onclick="window.location.href='mailto:hi@maxicris.com'"
         >
           <i style="font-size: 20px" class="fa-solid fa-envelope"></i>
           <p>Contactar</p>
-        </button>
+        </button> -->
+        <a class="btn-contact" href="mailto:hi@maxicris.com" class=""
+          ><i style="font-size: 20px" class="fa-solid fa-envelope"></i>
+          <p>Contactar</p></a
+        >
         <a
           class="network-link"
           style="font-size: 20px"
@@ -166,13 +169,17 @@
           </p>
         </div>
         <div class="networking-container">
-          <button
+          <!-- <button
             class="btn-contact"
             onclick="window.location.href='mailto:hi@maxicris.com'"
           >
             <i style="font-size: 20px" class="fa-solid fa-envelope"></i
             >Contactar
-          </button>
+          </button> -->
+          <a class="btn-contact" href="mailto:hi@maxicris.com" class=""
+            ><i style="font-size: 20px" class="fa-solid fa-envelope"></i>
+            <p>Contactar</p></a
+          >
           <a
             class="network-link"
             style="font-size: 20px"
@@ -198,7 +205,7 @@
     </section>
     <footer class="footer">
       <p>
-        Portfolio construido a base de mates y café —
+        Portfolio construido a base de mate y café —
         <span class="name-color">2022 Maxi Cris</span>
       </p>
     </footer>

@@ -3,7 +3,6 @@
   gap: var(--spacing-24);
   width: 124rem;
   margin: 6.4rem auto;
-  /* background-color: burlywood; */
 }
 
 .about-description h1 {
@@ -13,10 +12,11 @@
 }
 
 .about-description p {
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
+  line-height: var(--spacing-7);
   font-weight: var(--font-medium);
   color: var(--gray-400);
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-6);
 }
 
 .about-description .paragraph-bold {
@@ -27,8 +27,8 @@
 .blockquote {
   background-color: var(--gray-900);
   padding: var(--spacing-6) var(--spacing-10);
-  border-radius: var(--rounded-xl);
-  border-left: var(--spacing-3) solid var(--primary-400);
+  border-radius: var(--rounded-lg);
+  border-left: var(--spacing-2) solid var(--primary-400);
 }
 
 .blockquote p {
