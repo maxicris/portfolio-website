@@ -101,16 +101,16 @@ body {
   width: 70%;
   font-size: var(--text-7xl);
   font-weight: var(--font-bold);
-  line-height: 7.6rem;
+  line-height: 8rem;
   margin-bottom: 3.6rem;
 }
 
 .header .paragraph {
   display: flex;
-  color: var(--gray-300);
+  color: var(--gray-400);
   font-size: var(--text-2xl);
   line-height: var(--spacing-8);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-medium);
   margin-bottom: 4rem;
   width: 65%;
 }
@@ -122,7 +122,7 @@ body {
 .networking-container {
   display: flex;
   justify-content: space-between;
-  width: 33%;
+  width: 34%;
 }
 
 .network-link {
@@ -131,8 +131,16 @@ body {
   justify-content: space-between;
   font-weight: var(--font-medium);
   text-decoration: none;
-  color: var(--gray-400);
+  color: var(--gray-300);
   transition: all 700ms ease;
+  position: relative;
+  top: 0px;
+}
+
+.network-link:hover {
+  position: relative;
+  top: -4px;
+  color: var(--gray-50);
 }
 
 .network-link > i {
@@ -144,17 +152,13 @@ body {
   font-size: var(--text-base);
 }
 
-.network-link:hover {
-  color: var(--gray-50);
-}
-
 .btn-contact {
   display: flex;
   align-items: center;
   font-size: var(--text-base);
   font-weight: var(--font-medium);
   padding: 1.4rem 3.2rem;
-  border-radius: var(--rounded-3xl);
+  border-radius: var(--rounded-full);
   cursor: pointer;
   text-decoration: none;
   border: 0;
@@ -243,7 +247,7 @@ body {
 }
 
 .information .networking-container {
-  width: 70%;
+  width: 73%;
 }
 
 .profile-image {
