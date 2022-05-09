@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Maxi Cris" />
     <!------------------ Open Graph ----------------->
-
     <meta property="og:title" content="Maxi Cris — UI Designer" />
     <meta name="twitter:title" content="Maxi Cris — UI Designer" />
     <meta
@@ -52,6 +51,12 @@
       rel="stylesheet preload"
       as="style"
       type="text/css"
+      href="./assets/css/about.css"
+    />
+    <link
+      rel="stylesheet preload"
+      as="style"
+      type="text/css"
       href="./assets/css/media-query.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -68,10 +73,8 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/index.js"></script>
   </head>
   <body>
-    <div class="transition transition-1 is-active"></div>
     <nav class="nav">
       <div class="nav-desktop" id="nav-desktop">
         <a href="/index.html" class="logo">Maxi Cris</a>
@@ -106,59 +109,35 @@
         </div>
       </div>
     </nav>
-    <header class="header">
-      <h1 class="h1">
-        Hola! Soy <span class="">Maxi</span> <br />UI Designer viviendo
-        <br />
-        en Argentina
-      </h1>
-      <p class="paragraph">
-        Construyo soluciones a problemas reales, creando experiencias accesibles
-        y agradables a través de interfaces e interacciones
-      </p>
-      <div class="networking-container">
-        <button
-          class="btn-contact"
-          onclick="window.location.href='mailto:hi@maxicris.com'"
-        >
-          <i style="font-size: 20px" class="fa-solid fa-envelope"></i>
-          <p>Contactar</p>
-        </button>
-        <a
-          class="network-link"
-          style="font-size: 20px"
-          href="https://twitter.com/_maxicris"
-          target="_blank"
-        >
-          <i class="fa-brands fa-twitter"></i>
-          <p>Twitter</p>
-        </a>
-        <a
-          class="network-link"
-          style="font-size: 23px"
-          href="https://www.linkedin.com/in/maxicris/"
-          target="_blank"
-          ><i class="fa-brands fa-linkedin-in"></i>
-          <p>LinkedIn</p>
-        </a>
+    <section class="about">
+      <img src="assets/images/about-image.png" alt="" />
+      <div class="about-description">
+        <h1>Hola Soy Maxi</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio itaque
+          ex id tempore, quod blanditiis doloribus at atque voluptatibus sequi,
+          fuga in necessitatibus qui a doloremque suscipit consectetur voluptas
+          ut!
+        </p>
+        <p class="paragraph-bold">
+          Id tempore, quod blanditiis doloribus at atque voluptatibus sequi,
+          fuga in necessitatibus qui a doloremque suscipit consectetur voluptas
+          ut!
+        </p>
+        <p>
+          Id tempore, quod blanditiis doloribus at atque voluptatibus sequi,
+          fuga in necessitatibus qui a doloremque suscipit consectetur voluptas
+          ut!
+        </p>
+        <blockquote class="blockquote">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis reiciendis, eaque nisi soluta deleniti sequi rem alias
+            maxime id laudantium nesciunt reprehenderit autem libero commodi
+            nihil minima obcaecati
+          </p>
+        </blockquote>
       </div>
-    </header>
-    <section class="main-container">
-      <article class="project-container">
-        <img src="assets/images/project-1.jpg" alt="" />
-      </article>
-      <article class="project-container">
-        <img src="assets/images/project-2.jpg" alt="" />
-      </article>
-      <article class="project-container">
-        <img src="assets/images/project-3.jpg" alt="" />
-      </article>
-      <article class="project-container">
-        <img src="assets/images/project-4.jpg" alt="" />
-      </article>
-      <article class="project-container">
-        <img src="assets/images/project-5.jpg" alt="" />
-      </article>
     </section>
     <section class="contact-form" id="contact-form">
       <div class="information">

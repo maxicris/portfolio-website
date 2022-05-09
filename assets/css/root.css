@@ -8,30 +8,59 @@
   --gray-600: #52525b;
   --gray-700: #3f3f46;
   --gray-800: #27272a;
-  --gray-800-50: rgba(30, 30, 35, 0.5);
-  --gray-900-80: rgba(20, 20, 25, 0.8);
   --gray-900: #18181b;
   --gray-990: #0e0e11;
+  --gray-990-90: #0e0e11e6;
 
   --primary-400: #cc4a49;
-  --primary-400-50: rgb(204, 74, 73, 0.7);
 
-  --text-8xl: 7.2rem;
-  --text-6xl: 6rem;
-  --text-5xl: 4.8rem;
-  --text-4xl: 3.6rem;
-  --text-2xl: 2.2rem;
-  --text-xl: 2rem;
-  --text-lg: 1.8rem;
-  --text-base: 1.6rem;
   --text-sm: 1.4rem;
+  --text-base: 1.6rem;
+  --text-lg: 1.8rem;
+  --text-xl: 2rem;
+  --text-2xl: 2.2rem;
+  --text-3xl: 3rem;
+  --text-4xl: 3.6rem;
+  --text-5xl: 4.8rem;
+  --text-6xl: 6rem;
+  --text-7xl: 7.2rem;
 
-  --font-extrabold: 800;
-  --font-bold: 700;
-  --font-semibold: 600;
-  --font-medium: 500;
   --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
 
-  --rounded-3xl: 2.8rem;
+  --rounded-sm: 0.2rem;
   --rounded: 0.4rem;
+  --rounded-dm: 0.6rem;
+  --rounded-lg: 0.8rem;
+  --rounded-xl: 1.2rem;
+  --rounded-2xl: 1.6rem;
+  --rounded-3xl: 2.4rem;
+  --rounded-full: 50%;
+
+  --spacing-1: 0.4rem;
+  --spacing-1-5: 0.6rem;
+  --spacing-2: 0.8rem;
+  --spacing-2-5: 1rem;
+  --spacing-3: 1.2rem;
+  --spacing-3-5: 1.4rem;
+  --spacing-4: 1.6rem;
+  --spacing-5: 2rem;
+  --spacing-6: 2.4rem;
+  --spacing-7: 2.8rem;
+  --spacing-8: 3.2rem;
+  --spacing-9: 3.6rem;
+  --spacing-10: 4rem;
+  --spacing-11: 4.4rem;
+  --spacing-12: 4.8rem;
+  --spacing-14: 5.6rem;
+  --spacing-16: 6.4rem;
+  --spacing-20: 8rem;
+  --spacing-24: 9.6rem;
+  --spacing-28: 11.2rem;
+  --spacing-32: 12.8rem;
+  --spacing-36: 14.4rem;
+  --spacing-40: 16rem;
 }

@@ -44,6 +44,38 @@
     top: 64px;
     left: 0px;
   }
+
+  .nav-menu-mobile-actived {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .nav-menu-mobile-actived .links-mobile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 20%;
+  }
+
+  .nav-menu-mobile-actived a {
+    color: var(--gray-50);
+    font-size: var(--text-2xl);
+    font-weight: var(--font-semibold);
+    text-decoration: none;
+  }
+
+  .nav-networking-mobile {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 112px;
+  }
   /* ----------------- Comienzo de la animacion del menu mobile ----------------- */
 
   .menu-toggle .bar {
