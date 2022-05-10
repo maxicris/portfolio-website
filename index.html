@@ -59,6 +59,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
+      async
     />
     <script
       src="https://kit.fontawesome.com/5918e018cc.js"
@@ -135,9 +136,26 @@
       </div>
     </header>
     <section class="main-container">
-      <article class="project-container">
-        <img src="assets/images/project-1.jpg" alt="" />
-      </article>
+      <picture class="project-container">
+        <source
+          srcset="assets/images/image1.webp"
+          type="image/webp"
+          width="960"
+          height="640"
+        />
+        <source
+          srcset="assets/images/image1-min.jpg"
+          type="image/jpeg"
+          width="960"
+          height="640"
+        />
+        <img
+          src="assets/images/image1-min.jpg"
+          alt="Homepage de un marketplace de NFT's"
+          width="960"
+          height="640"
+        />
+      </picture>
     </section>
     <section class="contact-form" id="contact-form">
       <div class="information">
@@ -173,9 +191,29 @@
           </a>
         </div>
       </div>
-      <div class="profile-image">
+      <div class="">
         <img src="assets/images/profile-square.png" alt="" />
       </div>
+      <picture class="profile-image">
+        <source
+          srcset="assets/images/profile-square.webp"
+          type="image/webp"
+          width="350"
+          height="350"
+        />
+        <source
+          srcset="assets/images/profile-square-min.jpg"
+          type="image/jpeg"
+          width="350"
+          height="350"
+        />
+        <img
+          src="assets/images/profile-square-min.jpg"
+          alt="Foto de perfil de Maxi Cris"
+          width="350"
+          height="350"
+        />
+      </picture>
     </section>
     <footer class="footer">
       <p>
@@ -187,6 +225,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/index.js"></script>
+    <script async src="assets/js/index.js"></script>
   </body>
 </html>
