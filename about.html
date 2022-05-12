@@ -69,13 +69,9 @@
       src="https://kit.fontawesome.com/5918e018cc.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <div class="nav-desktop" id="nav-desktop">
         <a href="/index.html" class="logo">Maxi Cris</a>
         <div class="links-container">
@@ -205,19 +201,11 @@
         <span class="name-color">2022 Maxi Cris</span>
       </p>
     </footer>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("nav-mobile");
-        if (x.style.display === "flex") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "flex";
-        }
-      }
-      $(".menu-toggle").click(function () {
-        $(".nav").toggleClass("mobile-nav");
-        $(this).toggleClass("is-active");
-      });
-    </script>
+    <script async src="assets/js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5918e018cc.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </body>
 </html>

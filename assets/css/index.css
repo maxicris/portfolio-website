@@ -10,6 +10,9 @@ body {
   background-color: var(--gray-990);
   color: var(--gray-50);
   font-family: "Poppins", sans-serif;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /* -------------- Comienzo del nav-bar -------------- */
@@ -23,6 +26,25 @@ body {
   background-color: var(--gray-990-90);
   backdrop-filter: blur(1.2rem);
   z-index: 2;
+  border-bottom: 2px solid transparent;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.display-none-nav {
+  transition: 0.5s ease-in-out;
+  transform: translateY(-80px);
+  opacity: 0;
+}
+
+.display-flex-nav {
+  transition: 0.5s ease-out;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.border-bottom-nav {
+  border-bottom: 2px solid var(--gray-800);
 }
 
 .nav-desktop {
@@ -103,6 +125,9 @@ body {
   font-weight: var(--font-bold);
   line-height: 8rem;
   margin-bottom: 3.6rem;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .header .paragraph {
@@ -113,6 +138,9 @@ body {
   font-weight: var(--font-medium);
   margin-bottom: 4rem;
   width: 65%;
+  animation: fadeInAnimation ease 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .name-color {
@@ -123,6 +151,9 @@ body {
   display: flex;
   justify-content: space-between;
   width: 34%;
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .network-link {
@@ -274,4 +305,15 @@ body {
   color: var(--gray-300);
   font-size: var(--text-base);
   font-weight: var(--font-medium);
+}
+
+/* -------------- Page Transition Fade -------------- */
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
