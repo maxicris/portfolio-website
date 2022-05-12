@@ -131,10 +131,12 @@
         </p>
         <blockquote class="blockquote">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis reiciendis, eaque nisi soluta deleniti sequi rem alias
-            maxime id laudantium nesciunt reprehenderit autem libero commodi
-            nihil minima obcaecati
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque amet
+            accusamus qui dolores expedita minima quas laborum doloribus ad
+            molestiae, quae nobis animi accusantium quidem Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Neque amet accusamus qui dolores
+            expedita minima quas laborum doloribus ad molestiae, quae nobis
+            animi accusantium quidem
           </p>
         </blockquote>
       </div>
@@ -146,7 +148,10 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque amet
             accusamus qui dolores expedita minima quas laborum doloribus ad
-            molestiae, quae nobis animi accusantium quidem
+            molestiae, quae nobis animi accusantium quidem Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Neque amet accusamus qui dolores
+            expedita minima quas laborum doloribus ad molestiae, quae nobis
+            animi accusantium quidem
           </p>
         </div>
         <div class="networking-container">
@@ -173,13 +178,30 @@
           </a>
         </div>
       </div>
-      <div class="profile-image">
-        <img src="assets/images/profile-square.png" alt="" />
-      </div>
+      <picture class="profile-image">
+        <source
+          srcset="assets/images/profile-square.webp"
+          type="image/webp"
+          width="350"
+          height="350"
+        />
+        <source
+          srcset="assets/images/profile-square-min.jpg"
+          type="image/jpeg"
+          width="350"
+          height="350"
+        />
+        <img
+          src="assets/images/profile-square-min.jpg"
+          alt="Foto de perfil de Maxi Cris"
+          width="350"
+          height="350"
+        />
+      </picture>
     </section>
     <footer class="footer">
       <p>
-        Portfolio construido a base de mates y café —
+        Portfolio creado a base de mates y café —
         <span class="name-color">2022 Maxi Cris</span>
       </p>
     </footer>
