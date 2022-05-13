@@ -231,21 +231,21 @@ body {
   position: relative;
   top: 70px;
   right: 480px;
-  animation: float 15s ease-in-out infinite;
+  animation: float 28s ease-in-out infinite;
 }
 
 .image-2 {
   position: relative;
   top: -100px;
   right: 125px;
-  animation: float2 10s ease-in-out infinite;
+  animation: float2 23s ease-in-out infinite;
 }
 
 .image-3 {
   position: relative;
   top: -45px;
   right: 350px;
-  animation: float 8s ease-in-out infinite;
+  animation: float 18s ease-in-out infinite;
 }
 
 /* -------------- Comienzo del Main -------------- */
