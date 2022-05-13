@@ -188,18 +188,13 @@ body {
   align-items: center;
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
-  padding: 1.4rem 3.2rem;
+  padding: var(--spacing-3) var(--spacing-9);
   border-radius: var(--rounded-full);
   cursor: pointer;
   text-decoration: none;
   border: 0;
   color: var(--gray-50);
-  background: linear-gradient(
-    94.18deg,
-    #db6262 0%,
-    #d74848 0%,
-    #ba2222 102.32%
-  );
+  background-color: var(--secondary-400);
   transition: all 500ms ease;
   position: relative;
   top: 0px;
@@ -210,14 +205,14 @@ body {
 }
 
 .btn-contact:hover {
-  background: linear-gradient(
-    94.18deg,
-    #b94b4b 0%,
-    #c23232 0%,
-    #961414 102.32%
-  );
+  background-color: var(--secondary-500);
   position: relative;
   top: -4px;
+}
+
+.btn-secondary {
+  color: var(--gray-800);
+  background-color: var(--gray-50);
 }
 
 .imagenes {
@@ -275,12 +270,15 @@ body {
   border-radius: var(--rounded-lg);
 }
 
+.main-container .background-gray {
+  background: var(--gray-900);
+}
+
 /* -------------- Comienzo del Contact Form -------------- */
 
 .contact-form {
   display: flex;
   width: 124rem;
-  height: 38rem;
   margin: 11.2rem auto;
   border-radius: var(--rounded-2xl);
   border: 2px solid var(--gray-800);
@@ -289,7 +287,6 @@ body {
 .information {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: var(--spacing-12);
   width: 55%;
   padding: var(--spacing-14);
@@ -309,7 +306,7 @@ body {
 }
 
 .information .networking-container {
-  width: 73%;
+  width: 75%;
 }
 
 .profile-image {
