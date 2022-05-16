@@ -4,34 +4,35 @@
   width: 124rem;
   margin: 6.4rem auto;
 }
-
+.about img {
+  width: 40%;
+  border-radius: var(--rounded-2xl);
+}
+.about-description {
+  width: 60%;
+}
 .about-description h1 {
   font-size: var(--text-5xl);
   font-weight: var(--font-bold);
   margin-bottom: var(--spacing-5);
 }
-
 .about-description p {
   font-size: var(--text-lg);
-  line-height: var(--spacing-7);
   font-weight: var(--font-medium);
-  color: var(--gray-400);
+  color: var(--gray-700);
   margin-bottom: var(--spacing-6);
 }
-
 .about-description .paragraph-bold {
   font-weight: var(--font-semibold);
-  color: var(--gray-50);
+  color: var(--secondary-400);
 }
-
 .blockquote {
-  background-color: var(--gray-900);
+  background-color: var(--gray-200);
   padding: var(--spacing-6) var(--spacing-10);
   border-radius: var(--rounded-lg);
-  border-left: var(--spacing-2) solid var(--primary-400);
+  border-left: var(--spacing-2) solid var(--secondary-400);
 }
-
 .blockquote p {
-  color: var(--gray-50);
+  color: var(--gray-800);
   margin-bottom: 0;
 }
