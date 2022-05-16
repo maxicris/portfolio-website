@@ -1,10 +1,11 @@
 :root {
   --gray-50: #fafafa;
   --gray-100: #f4f4f5;
+  --gray-100-50: #f4f4f5e6;
   --gray-200: #e4e4e7;
   --gray-300: #d4d4d8;
   --gray-400: #a1a1aa;
-  --gray-500: #71717a;
+  --gray-500: #6f6f78;
   --gray-600: #52525b;
   --gray-700: #3f3f46;
   --gray-800: #27272a;
@@ -12,9 +13,12 @@
   --gray-990: #0e0e11;
   --gray-990-90: #0e0e11e6;
 
+  --primary-300: #e55f5f;
   --primary-400: #cc4a49;
-  --secondary-400: #005ec2;
-  --secondary-500: #004085;
+  --primary-500: #ab2a29;
+  --secondary-300: #0ba3db;
+  --secondary-400: #0070f3;
+  --secondary-500: #0b35db;
 
   --text-sm: 1.5rem;
   --text-base: 1.6rem;

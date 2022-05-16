@@ -1,11 +1,11 @@
-@media screen and (max-width: 1366px) {
+/*@media screen and (max-width: 1366px) {
   /* ----------------- Comienzo del nav-bar ----------------- */
-  .nav-desktop {
+  /*.nav-desktop {
     width: 94%;
   }
 
   /* ----------------- Comienzo del header ----------------- */
-  .header-container {
+  /*.header-container {
     width: 90%;
     height: 95vh;
   }
@@ -15,7 +15,7 @@
     line-height: var(--text-5xl);
   } */
 
-  .header-text .paragraph {
+  /*.header-text .paragraph {
     font-size: var(--text-xl);
   }
 }
