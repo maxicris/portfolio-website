@@ -91,7 +91,7 @@ body {
   display: flex;
   width: 124rem;
   margin: auto;
-  margin-top: var(--spacing-28);
+  margin-top: var(--spacing-32);
 }
 .header-container {
   display: flex;
@@ -187,24 +187,21 @@ body {
 }
 .balls {
   width: 50%;
-}
-.ball-1 {
   position: relative;
-  top: 0px;
-  right: -66px;
-  animation: float 50s ease-in-out infinite;
+  left: 170px;
+  top: -25px;
 }
 .ball-2 {
   position: relative;
-  top: 0px;
-  right: -220px;
-  animation: float2 40s ease-in-out infinite;
+  top: -50px;
+  right: -245px;
+  animation: float-ball-2 24s ease-in-out infinite;
 }
 .ball-3 {
   position: relative;
-  top: 225px;
-  right: 150px;
-  animation: float 30s ease-in-out infinite;
+  top: 175px;
+  right: 370px;
+  animation: float-ball 30s ease-in-out infinite;
 }
 .background-hero {
   background-image: url("../images/background3.jpg");
@@ -217,51 +214,48 @@ body {
   background-repeat: repeat;
   background-size: cover;
 }
-
-/* -------------- Comienzo del Main -------------- */
-
+/* ------------- Comienzo del Main ------------- */
 .main-container {
   display: flex;
-  /* flex-direction: column; */
-  align-items: center;
+  flex-wrap: wrap;
   gap: var(--spacing-10);
   width: 124rem;
   margin: auto;
   margin-top: 20rem;
 }
-
 .project-container {
   display: flex;
-  justify-content: center;
-  width: 50%;
-  /* padding: var(--spacing-10) 0; */
-  border-radius: var(--rounded-xl);
-  /* background-color: #88bef5; */
-  /* background: linear-gradient(220.55deg, #8a88fb 0%, #d079ee 100%); */
-  background: linear-gradient(90deg, #eab271 0%, #e7ad69 100%);
-
-  /* background: linear-gradient(135deg, #6edefc 0%, #7e7ce0 50%, #705fe5 100%); */
+  border-radius: var(--rounded-2xl);
 }
-
-.project-container img {
-  border-radius: var(--rounded-lg);
+.shot-1 {
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
 }
-
-.main-container .background-gray {
-  background: linear-gradient(220.55deg, #8a88fb 0%, #d079ee 100%);
+.shot-2 {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
 }
-
-/* -------------- Comienzo del Contact Form -------------- */
-
+.shot-3 {
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+}
+.shot-4 {
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+}
+/* --------- Comienzo del Contact Form --------- */
 .contact-form {
   display: flex;
   width: 124rem;
-  margin: 11.2rem auto;
+  margin: var(--spacing-28) auto var(--spacing-24);
   border-radius: var(--rounded-2xl);
-  background-color: var(--gray-900);
-  /* border: 2px solid var(--gray-800); */
+  background-color: var(--gray-200);
 }
-
 .information {
   display: flex;
   flex-direction: column;
@@ -269,41 +263,43 @@ body {
   width: 55%;
   padding: var(--spacing-14);
 }
-
 .information-header h2 {
   font-size: var(--text-3xl);
   font-weight: var(--font-bold);
   margin-bottom: var(--spacing-1);
 }
-
 .information-header p {
   font-size: var(--text-base);
   line-height: var(--spacing-6);
   font-weight: var(--font-medium);
-  color: var(--gray-400);
+  color: var(--gray-600);
 }
-
 .information .networking-container {
-  width: 75%;
-}
-
-.profile-image {
-  display: none;
-  justify-content: center;
-  align-items: flex-end;
-  width: 45%;
-  background-color: var(--primary-400);
-  border-radius: 0 1.6rem 1.6rem 0;
+  width: 76%;
 }
 .btn-secondary {
-  color: var(--gray-800);
-  background-color: var(--gray-50);
+  color: var(--gray-50);
+  background-color: var(--gray-800);
 }
 .btn-secondary:hover {
-  background-color: var(--gray-300);
+  background-color: var(--gray-990);
 }
-
-/* ------     ------- Comienzo del Footer ------------- */
+.squares {
+  width: 50%;
+}
+.square-1 {
+  position: relative;
+  top: 55px;
+  right: -95px;
+  animation: animationRotation 35s linear infinite;
+}
+.square-2 {
+  position: relative;
+  top: 170px;
+  right: -230px;
+  animation: animationRotation2 40s linear infinite;
+}
+/* ------------ Comienzo del Footer ------------ */
 .footer {
   display: flex;
   justify-content: center;
@@ -311,16 +307,14 @@ body {
   padding-bottom: var(--spacing-6);
 }
 .footer p {
-  color: var(--gray-300);
+  color: var(--gray-600);
   font-size: var(--text-base);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semibold);
 }
 .name-color {
   color: var(--primary-400);
 }
-
-/* -------------- Page Transition Fade -------------- */
-
+/* ---------- Animations/Transitions ----------- */
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -329,27 +323,41 @@ body {
     opacity: 1;
   }
 }
-
-@keyframes float {
+@keyframes float-ball {
   0% {
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(-40px);
+    transform: translatey(-180px);
   }
   100% {
     transform: translatey(0px);
   }
 }
-
-@keyframes float2 {
+@keyframes float-ball-2 {
   0% {
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(70px);
+    transform: translatey(180px);
   }
   100% {
     transform: translatey(0px);
+  }
+}
+@keyframes animationRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animationRotation2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
