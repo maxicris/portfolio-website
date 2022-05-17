@@ -1,7 +1,7 @@
 :root {
   --gray-50: #fafafa;
   --gray-100: #f4f4f5;
-  --gray-100-50: #f4f4f5e6;
+  --gray-100-50: #f4f4f5be;
   --gray-200: #e4e4e7;
   --gray-300: #d4d4d8;
   --gray-400: #a1a1aa;
@@ -16,6 +16,7 @@
   --primary-300: #e55f5f;
   --primary-400: #cc4a49;
   --primary-500: #ab2a29;
+  --secondary-200: #0ba3db;
   --secondary-300: #0ba3db;
   --secondary-400: #0070f3;
   --secondary-500: #0b35db;

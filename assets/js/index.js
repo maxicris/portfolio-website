@@ -1,3 +1,4 @@
+// Scroll nav bar
 var lastScrollTop = 0;
 window.addEventListener(
   "scroll",

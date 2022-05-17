@@ -12,7 +12,7 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-/* -------------- Comienzo del nav-bar -------------- */
+/* ----------- Comienzo del nav-bar ------------ */
 .nav {
   display: flex;
   justify-content: center;
@@ -81,7 +81,7 @@ body {
 }
 .links-container a:hover {
   color: var(--secondary-400);
-  background-color: var(--gray-200);
+  background-color: var(--secondary-200);
 }
 .nav-mobile {
   display: none;
@@ -91,7 +91,7 @@ body {
   display: flex;
   width: 124rem;
   margin: auto;
-  margin-top: var(--spacing-32);
+  margin-top: var(--spacing-40);
 }
 .header-container {
   display: flex;
@@ -218,7 +218,7 @@ body {
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-10);
+  gap: var(--spacing-6);
   width: 124rem;
   margin: auto;
   margin-top: 20rem;
@@ -312,7 +312,7 @@ body {
   font-weight: var(--font-semibold);
 }
 .name-color {
-  color: var(--primary-400);
+  color: var(--secondary-400);
 }
 /* ---------- Animations/Transitions ----------- */
 @keyframes fadeInAnimation {
