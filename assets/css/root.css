@@ -1,10 +1,11 @@
 :root {
+  --gray-0: #ffffff;
   --gray-50: #fafafa;
   --gray-100: #f4f4f5;
-  --gray-100-50: #f4f4f5be;
+  --gray-100-50: #f4f4f5ed;
   --gray-200: #e4e4e7;
   --gray-300: #d4d4d8;
-  --gray-400: #a1a1aa;
+  --gray-400: #aeaeb6;
   --gray-500: #6f6f78;
   --gray-600: #52525b;
   --gray-700: #3f3f46;
@@ -16,10 +17,11 @@
   --primary-300: #e55f5f;
   --primary-400: #cc4a49;
   --primary-500: #ab2a29;
-  --secondary-200: #0ba3db;
-  --secondary-300: #0ba3db;
+  --secondary-200: #e4f1ff;
+  --secondary-300: #d7e9ff;
   --secondary-400: #0070f3;
-  --secondary-500: #0b35db;
+  --secondary-500: #00499e;
+  --secondary-600: #002249;
 
   --text-sm: 1.5rem;
   --text-base: 1.6rem;
@@ -31,6 +33,7 @@
   --text-5xl: 4.8rem;
   --text-6xl: 6rem;
   --text-7xl: 7.2rem;
+  --text-8xl: 8rem;
 
   --font-regular: 400;
   --font-medium: 500;

@@ -69,35 +69,53 @@ body {
 }
 .links-container a {
   display: flex;
-  height: var(--spacing-9);
+  height: 100%;
   align-items: center;
   text-decoration: none;
-  color: var(--gray-600);
+  color: var(--gray-500);
   font-size: var(--text-sm);
   font-weight: var(--font-semibold);
-  transition: all 300ms ease;
-  padding: 0 var(--spacing-4);
-  border-radius: var(--rounded-lg);
+  transition: all 800ms ease;
+  padding: 0 var(--spacing-1);
+  border-bottom: 4px solid transparent;
 }
-.links-container a:hover {
-  color: var(--secondary-400);
-  background-color: var(--secondary-200);
+.link-contact {
+  position: relative;
+}
+.link-contact::after {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--secondary-400);
+  bottom: -5px;
+  left: 0;
+  transition: 0.8s;
+}
+.link-contact:hover::after {
+  width: 100%;
 }
 .nav-mobile {
   display: none;
 }
-/* ------------ Comienzo del Header ------------ */
-.header {
+/* ----- Comienzo del Section-Header ------ */
+.section-header {
   display: flex;
   width: 124rem;
   margin: auto;
   margin-top: var(--spacing-40);
 }
-.header-container {
+.section-container {
   display: flex;
   width: 50%;
   flex-direction: column;
   align-items: flex-start;
+}
+.h1 .headline {
+  font-size: var(--text-3xl);
+  color: var(--gray-500);
+  font-weight: var(--font-semibold);
 }
 .h1 {
   width: 100%;
@@ -105,24 +123,19 @@ body {
   animation: fadeInAnimation ease 1s;
   line-height: var(--spacing-12);
 }
-.h1 .headline {
-  font-size: 2.6rem;
-  color: var(--gray-500);
-  font-weight: var(--font-semibold);
-}
 .h1 .name {
-  font-size: var(--text-7xl);
+  font-size: var(--text-8xl);
   font-weight: var(--font-extrabold);
 }
 .h1 .rol {
-  font-size: var(--text-5xl);
+  font-size: var(--text-6xl);
   font-weight: var(--font-bold);
   color: var(--secondary-400);
 }
-.header .paragraph {
+.section-header .paragraph {
   display: flex;
   color: var(--gray-600);
-  font-size: var(--text-xl);
+  font-size: var(--text-2xl);
   font-weight: var(--font-medium);
   margin-bottom: var(--spacing-7);
   animation: fadeInAnimation ease 3s;
@@ -131,7 +144,10 @@ body {
   display: flex;
   justify-content: space-between;
   width: 70%;
-  animation: fadeInAnimation ease 5s;
+  animation: fadeInAnimation ease 8s;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  user-select: none;
 }
 .network-link {
   display: flex;
@@ -185,19 +201,22 @@ body {
   position: relative;
   top: -4px;
 }
-.balls {
+.figures-3d {
   width: 50%;
   position: relative;
   left: 170px;
   top: -25px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  user-select: none;
 }
-.ball-2 {
+.figma-3d {
   position: relative;
   top: -50px;
   right: -245px;
   animation: float-ball-2 24s ease-in-out infinite;
 }
-.ball-3 {
+.megaphone-3d {
   position: relative;
   top: 175px;
   right: 370px;
@@ -225,28 +244,16 @@ body {
 }
 .project-container {
   display: flex;
+  width: 49%;
+  transition: 0.4s;
   border-radius: var(--rounded-2xl);
 }
-.shot-1 {
-  background-color: #a9c9ff;
-  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+.project-container:hover {
+  box-shadow: 4px 6px 14px 0 rgba(138, 74, 168, 0.5);
+  transform: translate(-6px, -6px);
 }
-.shot-2 {
-  background-color: #8bc6ec;
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-}
-.shot-3 {
-  background-color: #74ebd5;
-  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
-}
-.shot-4 {
-  background-color: #ff3cac;
-  background-image: linear-gradient(
-    225deg,
-    #ff3cac 0%,
-    #784ba0 50%,
-    #2b86c5 100%
-  );
+.project-container img {
+  border-radius: var(--rounded-xl);
 }
 /* --------- Comienzo del Contact Form --------- */
 .contact-form {
@@ -254,7 +261,23 @@ body {
   width: 124rem;
   margin: var(--spacing-28) auto var(--spacing-24);
   border-radius: var(--rounded-2xl);
-  background-color: var(--gray-200);
+  background-color: var(--gray-0);
+  border: 3px solid var(--gray-100-50);
+  position: relative;
+}
+.contact-form::after {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  height: 6px;
+  border-radius: 100px 100px 0 0;
+  background-color: var(--secondary-400);
+  bottom: 1;
+  left: 0;
+  transition: 0.5s;
+}
+.contact-form:hover::after {
+  width: 100%;
 }
 .information {
   display: flex;
@@ -263,19 +286,19 @@ body {
   width: 55%;
   padding: var(--spacing-14);
 }
-.information-header h2 {
+.information-section h2 {
   font-size: var(--text-3xl);
   font-weight: var(--font-bold);
   margin-bottom: var(--spacing-1);
 }
-.information-header p {
-  font-size: var(--text-base);
+.information-section p {
+  font-size: 1.7rem;
   line-height: var(--spacing-6);
   font-weight: var(--font-medium);
-  color: var(--gray-600);
+  color: var(--gray-500);
 }
 .information .networking-container {
-  width: 76%;
+  width: 80%;
 }
 .btn-secondary {
   color: var(--gray-50);
@@ -284,22 +307,25 @@ body {
 .btn-secondary:hover {
   background-color: var(--gray-990);
 }
-.squares {
+.balls {
   width: 50%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  user-select: none;
 }
-.square-1 {
+.ball-1 {
   position: relative;
   top: 55px;
   right: -95px;
   animation: animationRotation 35s linear infinite;
 }
-.square-2 {
+.ball-2 {
   position: relative;
   top: 170px;
   right: -230px;
   animation: animationRotation2 40s linear infinite;
 }
-/* ------------ Comienzo del Footer ------------ */
+/* ---------- Comienzo del Footer ---------- */
 .footer {
   display: flex;
   justify-content: center;
@@ -314,7 +340,7 @@ body {
 .name-color {
   color: var(--secondary-400);
 }
-/* ---------- Animations/Transitions ----------- */
+/* --------- Animations/Transitions --------- */
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;

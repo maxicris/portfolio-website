@@ -55,6 +55,12 @@
       type="text/css"
       href="./assets/css/media-query.css"
     /> -->
+    <link
+      rel="stylesheet preload"
+      as="style"
+      type="text/css"
+      href="./assets/css/lightbox.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -68,8 +74,8 @@
       <div class="nav-desktop" id="nav-desktop">
         <a href="./index.html" class="logo link">Maxi Cris</a>
         <div class="links-container">
-          <a class="link" href="./about.html">Sobre mi</a>
-          <a class="link" href="#contact-form">Contacto</a>
+          <a class="link-contact" href="/about.html">Sobre mi</a>
+          <a class="link-contact" href="#contact-form">Contacto</a>
         </div>
       </div>
       <div class="nav-desktop nav-mobile">
@@ -98,160 +104,126 @@
         </div>
       </div>
     </nav>
-    <header class="header">
-      <div class="header-container">
-        <h1 class="h1">
-          <span class="headline">Hola! Soy</span><br />
-          <span class="name">Maxi Cris</span>
-          <br />
-          <span class="rol">UX/UI Designer</span>
-        </h1>
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque amet
-          accusamus qui dolores. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit.
-        </p>
-        <div class="networking-container">
-          <a class="btn-contact" href="mailto:hi@maxicris.com"
-            ><i style="font-size: 20px" class="fa-solid fa-envelope"></i>
-            <p>Contactar</p></a
-          >
-          <a
-            class="network-link"
-            href="https://twitter.com/_maxicris"
-            target="_blank"
-          >
-            <i class="fa-brands fa-twitter"></i>
-            <p>Twitter</p>
-          </a>
-          <a
-            class="network-link"
-            href="https://www.linkedin.com/in/maxicris/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i>
-            <p>LinkedIn</p>
-          </a>
-        </div>
-      </div>
-      <div class="balls">
-        <img class="ball-2" src="assets/images/15.png" alt="" />
-        <img class="ball-3" src="assets/images/compress1.png" alt="" />
-      </div>
-    </header>
-    <div class="background-hero"></div>
-    <section class="main-container" id="main-container">
-      <picture class="project-container shot-1" id="popup">
-        <source
-          srcset="assets/images/image3.png"
-          type="image/jpeg"
-          width="600"
-          height="450"
-        />
-        <img
-          src="assets/images/123123.png"
-          alt="Homepage de un marketplace de NFT's"
-          width="600"
-          height="450"
-        />
-      </picture>
-      <picture class="project-container shot-1">
-        <source
-          srcset="assets/images/image2.png"
-          type="image/jpeg"
-          width="600"
-          height="450"
-        />
-        <img
-          src="assets/images/123123.png"
-          alt="Homepage de un marketplace de NFT's"
-          width="600"
-          height="450"
-        />
-      </picture>
-      <picture class="project-container shot-3">
-        <source
-          srcset="assets/images/image2.png"
-          type="image/jpeg"
-          width="600"
-          height="450"
-        />
-        <img
-          src="assets/images/123123.png"
-          alt="Homepage de un marketplace de NFT's"
-          width="600"
-          height="450"
-        />
-      </picture>
-      <picture class="project-container shot-4">
-        <source
-          srcset="assets/images/image3.png"
-          type="image/jpeg"
-          width="600"
-          height="450"
-        />
-        <img
-          src="assets/images/123123.png"
-          alt="Homepage de un marketplace de NFT's"
-          width="600"
-          height="450"
-        />
-      </picture>
-    </section>
-    <section class="contact-form" id="contact-form">
-      <div class="information">
-        <div class="information-header">
-          <h2>Hablemos!</h2>
-          <p>
+    <main id="main">
+      <section class="section-header">
+        <div class="section-container">
+          <h1 class="h1">
+            <span class="headline">Hola! Soy</span><br />
+            <span class="name">Maxi Cris</span>
+            <br />
+            <span class="rol">UX/UI Designer</span>
+          </h1>
+          <p class="paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque amet
-            accusamus qui dolores expedita minima quas laborum doloribus ad
-            molestiae, quae nobis animi accusantium quidem Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit
+            accusamus qui dolores. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.
           </p>
+          <div class="networking-container">
+            <a class="btn-contact" href="mailto:hi@maxicris.com"
+              ><i style="font-size: 20px" class="fa-solid fa-envelope"></i>
+              <p>Contactar</p></a
+            >
+            <a
+              class="network-link"
+              href="https://twitter.com/_maxicris"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter"></i>
+              <p>Twitter</p>
+            </a>
+            <a
+              class="network-link"
+              href="https://www.linkedin.com/in/maxicris/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i>
+              <p>LinkedIn</p>
+            </a>
+          </div>
         </div>
-        <div class="networking-container">
-          <a
-            class="btn-contact btn-secondary"
-            href="mailto:hi@maxicris.com"
-            class=""
-            ><i style="font-size: 20px" class="fa-solid fa-envelope"></i>
-            <p>Contactar</p></a
-          >
-          <a
-            class="network-link"
-            style="font-size: 20px"
-            href="https://twitter.com/_maxicris"
-            target="_blank"
-          >
-            <i class="fa-brands fa-twitter"></i>
-            <p>Twitter</p>
-          </a>
-          <a
-            class="network-link"
-            style="font-size: 23px"
-            href="https://www.linkedin.com/in/maxicris/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i>
-            <p>LinkedIn</p>
-          </a>
+        <div class="figures-3d">
+          <img class="figma-3d" src="assets/images/15.png" alt="" />
+          <img class="megaphone-3d" src="assets/images/compress1.png" alt="" />
         </div>
-      </div>
-      <div class="squares">
-        <img class="square-1" src="assets/images/18.png" alt="" />
-        <img class="square-2" src="assets/images/38.png" alt="" />
-      </div>
-    </section>
+      </section>
+      <div class="background-hero" id="background-hero"></div>
+      <section class="main-container" id="main-container">
+        <a
+          class="project-container"
+          href="assets/images/image1.jpg"
+          data-lightbox="mygallery"
+          ><img src="assets/images/image1.jpg" alt=""
+        /></a>
+        <a
+          class="project-container"
+          href="assets/images/image2.jpg"
+          data-lightbox="mygallery"
+          ><img src="assets/images/image2.jpg" alt=""
+        /></a>
+        <a
+          class="project-container"
+          href="assets/images/image2.jpg"
+          data-lightbox="mygallery"
+          ><img src="assets/images/image2.jpg" alt=""
+        /></a>
+        <a
+          class="project-container"
+          href="assets/images/image1.jpg"
+          data-lightbox="mygallery"
+          ><img src="assets/images/image1.jpg" alt=""
+        /></a>
+      </section>
+      <section class="contact-form" id="contact-form">
+        <div class="information">
+          <div class="information-section">
+            <h2>Hablemos!</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+              amet accusamus qui dolores expedita minima quas laborum doloribus
+              ad molestiae, quae nobis animi accusantium quidem Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit
+            </p>
+          </div>
+          <div class="networking-container">
+            <a
+              class="btn-contact btn-secondary"
+              href="mailto:hi@maxicris.com"
+              class=""
+              ><i style="font-size: 20px" class="fa-solid fa-envelope"></i>
+              <p>Contactar</p></a
+            >
+            <a
+              class="network-link"
+              style="font-size: 20px"
+              href="https://twitter.com/_maxicris"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter"></i>
+              <p>Twitter</p>
+            </a>
+            <a
+              class="network-link"
+              style="font-size: 23px"
+              href="https://www.linkedin.com/in/maxicris/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i>
+              <p>LinkedIn</p>
+            </a>
+          </div>
+        </div>
+        <div class="balls">
+          <img class="ball-1" src="assets/images/18.png" alt="" />
+          <img class="ball-2" src="assets/images/38.png" alt="" />
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <p>
         Portfolio creado a base de mate y café —
         <span class="name-color">2022 Maxi Cris</span>
       </p>
     </footer>
+    <script async src="assets/js/lightbox-plus-jquery.min.js"></script>
     <script async src="assets/js/index.js"></script>
-    <script async src="assets/js/gallery.js"></script>
-    <script
-      src="https://kit.fontawesome.com/5918e018cc.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <script src="https://kit.fontawesome.com/5918e018cc.js"></script>
   </body>
 </html>
