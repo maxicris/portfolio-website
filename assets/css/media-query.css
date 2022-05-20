@@ -70,10 +70,21 @@
       z-index: 99999;
       background-color: #ffffff;
       width: 100vw;
-      height: 300vh;
+      height: 100vh;
     }
     body {
       overflow: hidden;
+    }
+    .responsive-time {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .responsive-time-paragraph {
+      text-align: center;
+      font-size: var(--text-2xl);
+      font-weight: 600;
+      color: var(--gray-600);
     }
   }
   /*
