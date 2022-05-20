@@ -93,6 +93,9 @@ body {
   left: 0;
   transition: 0.8s;
 }
+.link-contact:hover {
+  color: var(--gray-800);
+}
 .link-contact:hover::after {
   width: 100%;
 }
@@ -138,13 +141,13 @@ body {
   font-size: var(--text-2xl);
   font-weight: var(--font-medium);
   margin-bottom: var(--spacing-7);
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 2s;
 }
 .networking-container {
   display: flex;
   justify-content: space-between;
   width: 70%;
-  animation: fadeInAnimation ease 8s;
+  animation: fadeInAnimation ease 4s;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   user-select: none;
@@ -235,18 +238,20 @@ body {
 }
 /* ------------- Comienzo del Main ------------- */
 .main-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-6);
+  display: grid;
+  gap: 2%;
+  grid-template-columns: 49% 49%;
   width: 124rem;
   margin: auto;
   margin-top: 20rem;
 }
 .project-container {
-  display: flex;
-  width: 49%;
   transition: 0.4s;
   border-radius: var(--rounded-2xl);
+  /* width: 100%; */
+}
+.project-container img {
+  height: 100%;
 }
 .project-container:hover {
   box-shadow: 4px 6px 14px 0 rgba(138, 74, 168, 0.5);
@@ -284,7 +289,7 @@ body {
   flex-direction: column;
   gap: var(--spacing-12);
   width: 55%;
-  padding: var(--spacing-14);
+  padding: var(--spacing-11) var(--spacing-14);
 }
 .information-section h2 {
   font-size: var(--text-3xl);
@@ -321,8 +326,8 @@ body {
 }
 .ball-2 {
   position: relative;
-  top: 170px;
-  right: -230px;
+  top: 160px;
+  right: -215px;
   animation: animationRotation2 40s linear infinite;
 }
 /* ---------- Comienzo del Footer ---------- */

@@ -1,0 +1,285 @@
+[33mcommit 443beac6fea1882272b63842b6420c5ee58ec35e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 19 00:13:36 2022 -0300
+
+    Version desktop terminada
+
+[33mcommit 546e047c6e7d679278aac6c130e410c3cfc5c1f2[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Tue May 17 10:44:43 2022 -0300
+
+    pequenios fixs
+
+[33mcommit d3d12676e13ced7a1b8d58e476b0e2dd2bf16125[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 20:01:05 2022 -0300
+
+    bb
+
+[33mcommit da4c7b62aa2bdaa4574eb3bb8821eea00bdccc25[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 19:36:34 2022 -0300
+
+    bb
+
+[33mcommit d906aca366793675447f6d1dc010a0dec71c8a47[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 19:04:14 2022 -0300
+
+    bb
+
+[33mcommit f29f472b9767cb8b1ce3abc3f661b1504ca57c09[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 17:52:11 2022 -0300
+
+    bb
+
+[33mcommit fa04c212c4f21aeb8077063547bca7ac5184f684[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 17:19:03 2022 -0300
+
+    bb
+
+[33mcommit 1c51a9d99687f36de1b74d7f3d86cfa17f88f8b7[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 17:15:44 2022 -0300
+
+    discord open
+
+[33mcommit 647b343a00221bf8d2ca664b09a9ab8aed73dc96[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 17:09:53 2022 -0300
+
+    el open graph de discord me tiene podrido
+
+[33mcommit 43a1425070acb2dd090b9aacdb012a6cd644a645[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 17:02:09 2022 -0300
+
+    Home desktop terminado
+
+[33mcommit 35361c49bce31f02ac56c7cbc25fbf5bc994a823[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 10:06:46 2022 -0300
+
+    bl
+
+[33mcommit 52fb33839bb6cdb251dcf5dbdb228c34af28e0c2[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 10:03:47 2022 -0300
+
+    Bla
+
+[33mcommit be7403008099d59deba107b654fcd7a7709aba96[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 09:17:27 2022 -0300
+
+    fixed open graph
+
+[33mcommit bd8219f25e3666b3869e3e1ef1bbffebc451bb08[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 08:31:40 2022 -0300
+
+    Otra vez el graph...
+
+[33mcommit e69d8899726253bc9b92f1cc9416d792f07a4894[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 00:53:41 2022 -0300
+
+    Reemplazo de la imagen de Open Graph
+
+[33mcommit e0a6796e870dbcad99b4021594803e887469fd37[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 16 00:48:18 2022 -0300
+
+    Primera parte de la migracion a Light Mode
+
+[33mcommit 28ea809a49909f1d6657e75fc3dcd04e36bc16e1[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Fri May 13 15:25:07 2022 -0300
+
+    Arreglo de color de botones y testeo de imagenes
+
+[33mcommit e35cc6cddcb348df19e745cce7864a7080a57e73[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Fri May 13 09:50:46 2022 -0300
+
+    arreglado el background
+
+[33mcommit 67564b4348f28da19839dd169a2774bd6057e625[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Fri May 13 02:01:14 2022 -0300
+
+    fixeado la velocidad de las pelotas
+
+[33mcommit e2a106dbc55aedce4e886dd92fd9fcaea51f2c08[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Fri May 13 01:55:23 2022 -0300
+
+    Testeo del background hero
+
+[33mcommit 5b595e59573b17912f7342bed83e2460a43c782c[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 12 15:57:04 2022 -0300
+
+    transiciones de paginas y navbar
+
+[33mcommit 62ead82d7dabf14b166e5b45f3b42cb453a7cf9f[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 12 13:14:40 2022 -0300
+
+    testeo de pagina cv
+
+[33mcommit ce6ffc8fca1ad91d4b959740abb264b6547578ce[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 12 11:43:18 2022 -0300
+
+    No se
+
+[33mcommit e7d3fd8f2ac1055cf8f5289e17aa0254ff84166c[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 12 11:36:13 2022 -0300
+
+    Discord Open Graph DALEEEEEE
+
+[33mcommit f8f27342edb0f34d2b0e82cdc99073b8211da2bd[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 12 10:59:54 2022 -0300
+
+    Open Graph arreglado ahora si
+
+[33mcommit b9a3c5a9b7cf59000cac8b61beecc98778cbe103[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 12 10:46:25 2022 -0300
+
+    Open Graph arreglado
+
+[33mcommit 222c6e5f37ef25ec99d6ff001c7546e5d7c33daf[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 12 01:36:42 2022 -0300
+
+    test2
+
+[33mcommit ba58cd3aec486c24de85f64cbcc091dfe50a2b04[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 12 01:32:41 2022 -0300
+
+    Test
+
+[33mcommit ce5ffeead66493751f31196b1583e500397c4e38[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 12 01:24:05 2022 -0300
+
+    Segundo intento Open Graph
+
+[33mcommit 708e95189d239c485ded85e15086a1cd107f0b70[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 12 01:17:46 2022 -0300
+
+    Intentando arreglar Open Graph en Discord
+
+[33mcommit 043cdbe67bf804f87092aeec2b395f8aa5d70247[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Wed May 11 22:58:56 2022 -0300
+
+    Pequenios cambios y fixeadas
+
+[33mcommit 296d1ce4802d51091e6c94a7fc3aef55cf5e7c0d[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Tue May 10 11:58:44 2022 -0300
+
+    primera prueba de optimizacion de imagenes
+
+[33mcommit 7a63637596c4ef6fe8b92492c9416ccaf25d6292[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Tue May 10 10:38:59 2022 -0300
+
+    Desktop fixeado para comenzar a optimizar
+
+[33mcommit 227139c483f965cb62bbb0da955441f69b90724a[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 9 13:14:20 2022 -0300
+
+    Otro fixeada de detalles
+
+[33mcommit 676d9f156e997f8bc8ad5f16228a8ecea3038e01[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 9 12:35:18 2022 -0300
+
+    Pequenios fixeadas
+
+[33mcommit 6ecf5ddb3ace1cb9e67c44b4d5cc2f2499cf84ec[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 9 11:45:38 2022 -0300
+
+    Fix fade transition
+
+[33mcommit e219a47456621a16f1963371456ac07fd49b3622[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 9 01:12:37 2022 -0300
+
+    Primera prueba de la version desktop terminada
+
+[33mcommit aa6ef6bd7e96a2ad8a026151b90df8b233834397[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Thu May 5 13:46:45 2022 -0300
+
+    Testeo de blur en Firefox
+
+[33mcommit e6fa6fc0e30dba4887851fe8d4f300ab757e7b43[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Wed May 4 01:12:30 2022 -0300
+
+    Update de imagen del Open Graphs
+
+[33mcommit 7cd53f6ac1472dd8e34bd6bbb3b4e7ef88c2fa01[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Wed May 4 01:01:31 2022 -0300
+
+    Tercer update de los Open Graphs
+
+[33mcommit 4f9c8acffe5de691f999bd280abd7003d429c8c3[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Wed May 4 00:41:33 2022 -0300
+
+    Update de Open Graphs
+
+[33mcommit 523eb086ef553a0a584bcc765ad56910a72c2779[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Wed May 4 00:02:39 2022 -0300
+
+    Testeo de Open Graphs
+
+[33mcommit 943224a892d1a7a7196708200aff88d2d77e934a[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 2 20:32:31 2022 -0300
+
+    Update CTA Contactar Fill Background
+
+[33mcommit 90512e71d1c57cb299ed86e1aeb3887ab2e2e24b[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Mon May 2 19:44:03 2022 -0300
+
+    Above the fold 0.1, stroke gradiente CTA
+
+[33mcommit 3275aa7fac8347655f5d651463a2f819784acaa8[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Sat Apr 30 03:21:54 2022 -0300
+
+    Acomodo de tamanios del menu mobile
+
+[33mcommit 999f0d5b34b131a58bac7790ef465277acec4898[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Sat Apr 30 02:53:32 2022 -0300
+
+    Testing del menu mobile ya implementado con animacion
+
+[33mcommit ba05a5029f48aa7887b20b93c6968aee828fd672[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Date:   Fri Apr 29 01:48:16 2022 -0300
+
+    Ajustes de detalles para la primera version del menu mobile
+
+[33mcommit 69e6c98f5b3ae309604abb83d66ec88c36f12f50[m
+Author: Maxi Cris <maxicris@protonmail.com>
+Dat

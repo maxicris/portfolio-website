@@ -17,11 +17,3 @@ window.addEventListener(
   },
   false
 );
-// Ocultamiento del overflow para el body
-let overflow = document.getElementById("main");
-overflow.addEventListener("mouseenter", function () {
-  document.body.style.overflow = "auto";
-});
-overflow.addEventListener("mouseleave", function () {
-  document.body.style.overflow = "hidden";
-});

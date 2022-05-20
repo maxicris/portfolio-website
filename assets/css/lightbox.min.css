@@ -31,7 +31,7 @@ body.lb-disable-scrolling {
   max-height: none;
   border-radius: 3px;
   border: 4px solid #fff;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 .lightbox a img {
   border: none;
@@ -41,7 +41,7 @@ body.lb-disable-scrolling {
   width: 250px;
   height: 250px;
   margin: 0 auto;
-  border-radius: 16px;
+  border-radius: 10px;
   background-color: #fff;
 }
 .lb-outerContainer:after {
@@ -156,7 +156,7 @@ body.lb-disable-scrolling {
   color: #999;
 }
 .lb-data .lb-close {
-  display: block;
+  display: none;
   /* float: right; */
   position: relative;
   bottom: 857px;
