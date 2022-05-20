@@ -248,10 +248,9 @@ body {
 .project-container {
   transition: 0.4s;
   border-radius: var(--rounded-2xl);
-  /* width: 100%; */
 }
 .project-container img {
-  height: 100%;
+  width: 100%;
 }
 .project-container:hover {
   box-shadow: 4px 6px 14px 0 rgba(138, 74, 168, 0.5);
