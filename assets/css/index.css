@@ -250,6 +250,7 @@ body {
   border-radius: var(--rounded-2xl);
 }
 .project-container img {
+  height: 100%;
   width: 100%;
 }
 .project-container:hover {
