@@ -123,7 +123,7 @@ body {
 .h1 {
   width: 100%;
   margin-bottom: var(--spacing-4);
-  animation: fadeInAnimation ease 1s;
+  /* animation: fadeInAnimation ease 1s; */
   line-height: var(--spacing-12);
 }
 .h1 .name {
@@ -141,13 +141,13 @@ body {
   font-size: var(--text-2xl);
   font-weight: var(--font-medium);
   margin-bottom: var(--spacing-7);
-  animation: fadeInAnimation ease 2s;
+  /* animation: fadeInAnimation ease 2s; */
 }
 .networking-container {
   display: flex;
   justify-content: space-between;
   width: 70%;
-  animation: fadeInAnimation ease 4s;
+  /* animation: fadeInAnimation ease 4s; */
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   user-select: none;
@@ -226,7 +226,7 @@ body {
   animation: float-ball 30s ease-in-out infinite;
 }
 .background-hero {
-  background-image: url("../images/background3.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/background-hero.webp?alt=media&token=2df260b3-bff1-4ce8-af21-bf5cb2deb7d0");
   position: absolute;
   top: 0px;
   left: 0px;
@@ -321,13 +321,13 @@ body {
   position: relative;
   top: 55px;
   right: -95px;
-  animation: animationRotation 35s linear infinite;
+  animation: float-contact 35s linear infinite;
 }
 .ball-2 {
   position: relative;
   top: 160px;
   right: -215px;
-  animation: animationRotation2 40s linear infinite;
+  animation: float-contact-2 40s linear infinite;
 }
 /* ---------- Comienzo del Footer ---------- */
 .footer {
@@ -342,7 +342,7 @@ body {
   font-weight: var(--font-semibold);
 }
 .name-color {
-  color: var(--secondary-400);
+  color: var(--secondary-500);
 }
 /* --------- Animations/Transitions --------- */
 @keyframes fadeInAnimation {
@@ -375,19 +375,25 @@ body {
     transform: translatey(0px);
   }
 }
-@keyframes animationRotation {
+@keyframes float-contact {
   0% {
-    transform: rotate(0deg);
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(60px);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translatey(0px);
   }
 }
-@keyframes animationRotation2 {
+@keyframes float-contact-2 {
   0% {
-    transform: rotate(0deg);
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-60px);
   }
   100% {
-    transform: rotate(-360deg);
+    transform: translatey(0px);
   }
 }
