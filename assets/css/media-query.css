@@ -1,28 +1,94 @@
-/*@media screen and (max-width: 1366px) {
-  /* ----------------- Comienzo del nav-bar ----------------- */
-  /*.nav-desktop {
+@media screen and (max-width: 1366px) {
+  /* ---------- Comienzo del nav-bar ------------- */
+  .nav-desktop {
     width: 94%;
   }
-
-  /* ----------------- Comienzo del header ----------------- */
-  /*.header-container {
-    width: 90%;
-    height: 95vh;
+  .main-container {
+    width: 94%;
   }
-  /* 
+  .section-header {
+    width: 90%;
+  }
+  .contact-form {
+    width: 94%;
+  }
+  .about {
+    width: 94%;
+    gap: var(--spacing-10);
+  }
+  .about-description h1 {
+    font-size: var(--text-4xl);
+  }
+  .about-description p {
+    font-size: var(--text-base);
+    margin-bottom: var(--spacing-5);
+  }
+}
+/* ----------------- Comienzo del header -------------- */
+@media screen and (max-width: 1240px) {
+  .section-container {
+    width: 64%;
+  }
+  .megaphone-3d {
+    display: none;
+  }
+  .figma-3d {
+    right: 45px;
+  }
+  .information {
+    width: 100%;
+  }
+  .ball-1 {
+    right: -75px;
+  }
+  .ball-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* ----------- Comienzo del nav-bar ----------- */
+  .section-container {
+    width: 100%;
+  }
+  .figma-3d {
+    right: 120px;
+  }
+  .main-container {
+    display: grid;
+    gap: 0.5%;
+    grid-template-columns: 100%;
+  }
+  .about img {
+    height: 100%;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .responsive-time {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99999;
+      background-color: #ffffff;
+      width: 100vw;
+      height: 300vh;
+    }
+    body {
+      overflow: hidden;
+    }
+  }
+  /*
   .header-text .h1 {
     font-size: var(--text-5xl);
     line-height: var(--text-5xl);
-  } */
-
-  /*.header-text .paragraph {
-    font-size: var(--text-xl);
   }
-}
 
-@media screen and (max-width: 640px) {
-  /* ----------------- Comienzo del nav-bar ----------------- */
-  .nav-desktop {
+  .header-text .paragraph {
+    font-size: var(--text-xl);
+  } */
+}
+/* @media screen and (max-width: 640px) { */
+/* ----------------- Comienzo del nav-bar ----------------- */
+/* .nav-desktop {
     display: none;
     width: 88%;
   }
@@ -75,10 +141,10 @@
     flex-direction: row;
     justify-content: space-around;
     margin-top: 112px;
-  }
-  /* ----------------- Comienzo de la animacion del menu mobile ----------------- */
+  } */
+/* ----------------- Comienzo de la animacion del menu mobile ----------------- */
 
-  .menu-toggle .bar {
+/* .menu-toggle .bar {
     width: 25px;
     height: 3px;
     background-color: #ffffff;
@@ -124,4 +190,4 @@
   .mobile-nav {
     transform: translate(0%) !important;
   }
-}
+} */

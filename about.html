@@ -2,10 +2,14 @@
 <html lang="es">
   <head>
     <title>Maxi Cris</title>
+    <meta
+      name="description"
+      content="Portfolio de Maxi Cris, UX/UI Designer que se encuentra trabajando de forma remota desde Argentina."
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Maxi Cris" />
-    <!------------------ Open Graph ----------------->
+    <!--------- Open Graph ----------->
     <meta property="og:title" content="Maxi Cris — UX/UI Designer" />
     <meta name="twitter:title" content="Maxi Cris — UX/UI Designer" />
     <meta
@@ -18,17 +22,17 @@
     />
     <meta
       property="og:description"
-      content="Este es el portfolio de Maxi Cris, UX/UI Designer que se encuentra trabajando de forma remota desde Argentina."
+      content="Portfolio de Maxi Cris, UX/UI Designer que se encuentra trabajando de forma remota desde Argentina."
     />
     <meta
       name="twitter:description"
-      content="Este es el portfolio de Maxi Cris, UX/UI Designer que se encuentra trabajando de forma remota desde Argentina."
+      content="Portfolio de Maxi Cris, UX/UI Designer que se encuentra trabajando de forma remota desde Argentina."
     />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:url" content="https://maxicris.com" />
     <meta name="twitter:url" content="https://maxicris.com" />
-    <!--------------------------------------------->
+    <!--------------------------------->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link
       rel="stylesheet preload"
@@ -54,18 +58,264 @@
       type="text/css"
       href="./assets/css/about.css"
     />
-    <!-- <link
+    <link
+      rel="stylesheet preload"
+      as="style"
+      type="text/css"
+      href="./assets/css/lightbox.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      defer
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: var(--gray-100);
+        color: var(--gray-800);
+        font-family: "Poppins", sans-serif;
+        animation: fadeInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      /* ----------- Comienzo del nav-bar ------------ */
+      .nav {
+        display: flex;
+        justify-content: center;
+        height: var(--spacing-14);
+        border-bottom: 2px solid transparent;
+        position: sticky;
+        top: 0px;
+        transform: translateY(0px);
+        z-index: 1;
+        opacity: 1;
+      }
+      .nav-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 124rem;
+      }
+      .display-none-nav {
+        transition: 0.5s ease-in-out;
+        transform: translateY(-80px);
+        opacity: 0;
+      }
+      .display-flex-nav {
+        background-color: var(--gray-100-50);
+        backdrop-filter: blur(1.2rem);
+        transition: 0.5s ease-out;
+        transform: translateY(0px);
+        opacity: 1;
+      }
+      .border-bottom-nav {
+        border-bottom: 2px solid var(--gray-200);
+      }
+      .logo {
+        height: 30px;
+        color: var(--gray-800);
+        font-size: var(--text-2xl);
+        font-weight: var(--font-bold);
+        text-decoration: none;
+        position: relative;
+        top: 0px;
+        transition: all 800ms ease;
+      }
+      .logo:hover {
+        position: relative;
+        top: -3px;
+        color: var(--secondary-400);
+      }
+      .links-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 22rem;
+        height: 100%;
+      }
+      .links-container a {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        text-decoration: none;
+        color: var(--gray-500);
+        font-size: var(--text-sm);
+        font-weight: var(--font-semibold);
+        transition: all 800ms ease;
+        padding: 0 var(--spacing-1);
+        border-bottom: 4px solid transparent;
+      }
+      .link-contact {
+        position: relative;
+      }
+      .link-contact::after {
+        content: " ";
+        position: absolute;
+        width: 0%;
+        height: 4px;
+        border-radius: 10px;
+        background-color: var(--secondary-400);
+        bottom: -5px;
+        left: 0;
+        transition: 0.8s;
+      }
+      .link-contact:hover {
+        color: var(--gray-800);
+      }
+      .link-contact:hover::after {
+        width: 100%;
+      }
+      .nav-mobile {
+        display: none;
+      }
+      /* ----- Comienzo del Section-Header ------ */
+      .section-header {
+        display: flex;
+        width: 124rem;
+        margin: auto;
+        margin-top: var(--spacing-40);
+      }
+      .section-container {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .h1 .headline {
+        font-size: var(--text-3xl);
+        color: var(--gray-500);
+        font-weight: var(--font-semibold);
+      }
+      .h1 {
+        width: 100%;
+        margin-bottom: var(--spacing-4);
+        /* animation: fadeInAnimation ease 1s; */
+        line-height: var(--spacing-12);
+      }
+      .h1 .name {
+        font-size: var(--text-8xl);
+        font-weight: var(--font-extrabold);
+      }
+      .h1 .rol {
+        font-size: var(--text-6xl);
+        font-weight: var(--font-bold);
+        color: var(--secondary-400);
+      }
+      .section-header .paragraph {
+        display: flex;
+        color: var(--gray-600);
+        font-size: var(--text-2xl);
+        font-weight: var(--font-medium);
+        margin-bottom: var(--spacing-7);
+        /* animation: fadeInAnimation ease 2s; */
+      }
+      .networking-container {
+        display: flex;
+        justify-content: space-between;
+        width: 435px;
+        /* animation: fadeInAnimation ease 4s; */
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        user-select: none;
+      }
+      .network-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: var(--font-medium);
+        text-decoration: none;
+        color: var(--gray-600);
+        transition: all 700ms ease;
+        position: relative;
+        top: 0px;
+      }
+      .network-link p {
+        font-size: var(--text-sm);
+      }
+      .networking-container .network-link i {
+        padding-bottom: var(--spacing-1);
+        margin-right: var(--spacing-3);
+        color: var(--gray-600);
+        font-size: var(--text-2xl);
+      }
+      .network-link:hover {
+        position: relative;
+        top: -4px;
+        color: var(--secondary-500);
+      }
+      .network-link:hover i {
+        color: var(--secondary-500);
+      }
+      .btn-contact {
+        display: flex;
+        align-items: center;
+        font-size: var(--text-sm);
+        font-weight: var(--font-medium);
+        padding: var(--spacing-4) var(--spacing-10);
+        border-radius: var(--rounded-xl);
+        cursor: pointer;
+        text-decoration: none;
+        border: 0;
+        color: var(--gray-50);
+        background-color: var(--secondary-400);
+        transition: all 500ms ease;
+        position: relative;
+        top: 0px;
+      }
+      .btn-contact > i {
+        margin-right: var(--spacing-3);
+      }
+      .btn-contact:hover {
+        background-color: var(--secondary-500);
+        position: relative;
+        top: -4px;
+      }
+      .figures-3d {
+        width: 50%;
+        position: relative;
+        left: 170px;
+        top: -25px;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        user-select: none;
+      }
+      .figma-3d {
+        position: relative;
+        top: -50px;
+        right: -245px;
+        animation: float-ball-2 24s ease-in-out infinite;
+      }
+      .megaphone-3d {
+        position: relative;
+        top: 175px;
+        right: 370px;
+        animation: float-ball 30s ease-in-out infinite;
+      }
+      .background-hero {
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/background-hero.webp?alt=media&token=2df260b3-bff1-4ce8-af21-bf5cb2deb7d0");
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background-repeat: repeat;
+        background-size: cover;
+      }
+    </style>
+    <link
       rel="stylesheet preload"
       as="style"
       type="text/css"
       href="./assets/css/media-query.css"
-    /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-      async
     />
   </head>
   <body>
@@ -175,8 +425,20 @@
         </div>
       </div>
       <div class="balls">
-        <img class="ball-1" src="assets/images/18.png" alt="" />
-        <img class="ball-2" src="assets/images/38.png" alt="" />
+        <img
+          class="ball-1"
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/image2-3d-min.webp?alt=media&token=3d9c7bcf-26e2-437c-9ed6-917c68135a0f"
+          width="140"
+          height="140"
+          alt="Bola blanca puramente decorativa numero 1"
+        />
+        <img
+          class="ball-2"
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/image1-3d-min.webp?alt=media&token=cc419419-0459-48b0-994f-f8ae481a1b6d"
+          width="140"
+          height="140"
+          alt="Bola blanca puramente decorativa numero 2"
+        />
       </div>
     </section>
     <footer class="footer">

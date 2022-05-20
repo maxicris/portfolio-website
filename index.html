@@ -52,12 +52,6 @@
       type="text/css"
       href="./assets/css/index.css"
     />
-    <!-- <link
-      rel="stylesheet preload"
-      as="style"
-      type="text/css"
-      href="./assets/css/media-query.css"
-    /> -->
     <link
       rel="stylesheet preload"
       as="style"
@@ -77,6 +71,7 @@
       }
       html {
         scroll-behavior: smooth;
+        overflow-x: hidden;
       }
       body {
         background-color: var(--gray-100);
@@ -220,7 +215,7 @@
       .networking-container {
         display: flex;
         justify-content: space-between;
-        width: 70%;
+        width: 435px;
         /* animation: fadeInAnimation ease 4s; */
         -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */
@@ -311,6 +306,12 @@
         background-size: cover;
       }
     </style>
+    <link
+      rel="stylesheet preload"
+      as="style"
+      type="text/css"
+      href="./assets/css/media-query.css"
+    />
   </head>
   <body>
     <nav class="nav" id="nav">
@@ -546,6 +547,7 @@
         <span class="name-color">2022 Maxi Cris</span>
       </p>
     </footer>
+    <div class="responsive-time"></div>
     <script
       async
       src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/lightbox-plus-jquery.min.js?alt=media&token=eacb61b3-10c7-4152-8dc9-fa50255ac0db"
