@@ -59,7 +59,8 @@ body.lb-disable-scrolling {
   width: 36px;
   height: 36px;
   margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat;
+  background: url(https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/loading.gif?alt=media&token=2d18d793-e4a8-433f-9893-d20d02ff8a0a)
+    no-repeat;
 }
 .lb-nav {
   position: absolute;
