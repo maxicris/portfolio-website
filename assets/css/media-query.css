@@ -1,7 +1,7 @@
 @media screen and (max-width: 1366px) {
   /* ---------- Comienzo del nav-bar ------------- */
   .nav-desktop {
-    width: 94%;
+    width: 92%;
   }
   .main-container {
     width: 94%;
@@ -63,15 +63,6 @@
   }
 
   @media screen and (max-width: 1023px) {
-    .responsive-time {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 99999;
-      background-color: #ffffff;
-      width: 100vw;
-      height: 100vh;
-    }
     body {
       overflow: hidden;
     }
@@ -79,6 +70,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99999;
+      background-color: #ffffff;
+      width: 100vw;
+      height: 100vh;
     }
     .responsive-time-paragraph {
       text-align: center;

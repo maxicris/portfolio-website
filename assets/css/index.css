@@ -31,7 +31,7 @@ body {
 .contact-form {
   display: flex;
   width: 124rem;
-  margin: var(--spacing-28) auto var(--spacing-24);
+  margin: var(--spacing-28) auto var(--spacing-12);
   border-radius: var(--rounded-2xl);
   background-color: var(--gray-0);
   border: 3px solid var(--gray-100-50);
@@ -111,6 +111,9 @@ body {
 }
 .name-color {
   color: var(--secondary-500);
+}
+.responsive-time {
+  display: none;
 }
 /* --------- Animations/Transitions --------- */
 @keyframes fadeInAnimation {
