@@ -117,7 +117,27 @@ body {
   0% {
     opacity: 0;
   }
+  50% {
+    opacity: 0;
+  }
   100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInAnimation2 {
+  0% {
+    transform: translatey(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translatey(100px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translatey(0px);
     opacity: 1;
   }
 }
