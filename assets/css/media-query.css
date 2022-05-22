@@ -64,7 +64,11 @@
 
   @media screen and (max-width: 1023px) {
     body {
+      height: 100%;
       overflow: hidden;
+    }
+    .background-hero {
+      display: none;
     }
     .responsive-time {
       display: flex;
@@ -76,7 +80,8 @@
       z-index: 99999;
       background-color: #ffffff;
       width: 100vw;
-      height: 100vh;
+      height: 100%;
+      overflow: hidden;
     }
     .responsive-time-paragraph {
       text-align: center;
