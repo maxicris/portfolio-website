@@ -20,8 +20,11 @@
     font-size: var(--text-4xl);
   }
   .about-description p {
-    font-size: var(--text-base);
+    /* font-size: var(--text-base); */
     margin-bottom: var(--spacing-5);
+  }
+  .about img {
+    width: 45%;
   }
 }
 /* ----------------- Comienzo del header -------------- */
@@ -43,6 +46,9 @@
   }
   .ball-2 {
     display: none;
+  }
+  .about img {
+    width: 55%;
   }
 }
 @media screen and (max-width: 1024px) {
