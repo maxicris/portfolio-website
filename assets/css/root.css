@@ -92,7 +92,7 @@
 }
 .text-2xl-regular {
   font-size: var(--text-2xl);
-  line-height: var(--spacing-8);
+  line-height: var(--spacing-9);
   font-weight: var(--font-regular);
 }
 .text-xl-medium {

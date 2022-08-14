@@ -52,8 +52,8 @@ body {
 }
 .logo {
   color: var(--gray-20);
-  font-size: 26px;
-  font-weight: var(--font-bold);
+  font-size: 24px;
+  font-weight: var(--font-semibold);
   text-decoration: none;
   position: relative;
   top: 0px;
@@ -110,7 +110,7 @@ body {
 .section-header {
   display: flex;
   width: 124rem;
-  margin: var(--spacing-40) auto var(--spacing-40);
+  margin: var(--spacing-40) auto 20rem;
 }
 .section-container {
   display: flex;
@@ -121,7 +121,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-4);
 }
 .cheer {
   margin-bottom: var(--spacing-2);
@@ -150,8 +150,6 @@ body {
 .network-link {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-weight: var(--font-medium);
   text-decoration: none;
   color: var(--gray-600);
   transition: all 300ms ease;
@@ -159,7 +157,8 @@ body {
   top: 0px;
 }
 .network-link p {
-  font-size: var(--text-sm);
+  font-size: var(--text-lg);
+  padding: var(--spacing-1) 0 0 var(--spacing-3);
 }
 .networking-container .network-link i {
   padding-bottom: var(--spacing-1);
@@ -201,15 +200,11 @@ body {
   top: -4px;
 }
 .background-hero {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/background-hero.webp?alt=media&token=2df260b3-bff1-4ce8-af21-bf5cb2deb7d0");
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100vw;
-  height: 1080px;
   z-index: -1;
-  background-repeat: repeat;
-  background-size: cover;
+  width: 100%;
 }
 /* ------------- Comienzo del Main ------------- */
 .main-container {
