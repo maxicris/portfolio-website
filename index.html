@@ -46,260 +46,13 @@
       type="text/css"
       href="./assets/css/root.css"
     />
-    <link
-      rel="stylesheet preload"
-      as="style"
-      type="text/css"
-      href="./assets/css/lightbox.min.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       defer
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      ::-webkit-scrollbar {
-        display: none;
-      }
-      html {
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-      }
-      body {
-        background-color: var(--gray-100);
-        color: var(--gray-800);
-        font-family: "Poppins", sans-serif;
-        animation: fadeInAnimation ease 1s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-      }
-      /* ----------- Comienzo del nav-bar ------------ */
-      .nav {
-        display: flex;
-        justify-content: center;
-        height: var(--spacing-14);
-        border-bottom: 2px solid transparent;
-        position: sticky;
-        top: 0px;
-        transform: translateY(0px);
-        z-index: 1;
-        opacity: 1;
-      }
-      .nav-desktop {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 124rem;
-      }
-      .display-none-nav {
-        transition: 0.5s ease-in-out;
-        transform: translateY(-80px);
-        opacity: 0;
-      }
-      .display-flex-nav {
-        background-color: var(--gray-100-50);
-        backdrop-filter: blur(1.2rem);
-        transition: 0.5s ease-out;
-        transform: translateY(0px);
-        opacity: 1;
-      }
-      .border-bottom-nav {
-        border-bottom: 2px solid var(--gray-200);
-      }
-      .logo {
-        height: 30px;
-        color: var(--gray-800);
-        font-size: var(--text-2xl);
-        font-weight: var(--font-bold);
-        text-decoration: none;
-        position: relative;
-        top: 0px;
-        transition: all 500ms ease;
-      }
-      .logo:hover {
-        position: relative;
-        top: -3px;
-        color: var(--secondary-300);
-      }
-      .links-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 22rem;
-        height: 100%;
-      }
-      .links-container a {
-        display: flex;
-        height: 100%;
-        align-items: center;
-        text-decoration: none;
-        color: var(--gray-500);
-        font-size: var(--text-sm);
-        font-weight: var(--font-semibold);
-        transition: all 800ms ease;
-        padding: 0 var(--spacing-1);
-        border-bottom: 4px solid transparent;
-      }
-      .link-contact {
-        position: relative;
-      }
-      .link-contact::after {
-        content: " ";
-        position: absolute;
-        width: 0%;
-        height: 4px;
-        border-radius: 10px;
-        background-color: var(--secondary-200);
-        bottom: -5px;
-        left: 0;
-        transition: 0.8s;
-      }
-      .link-contact:hover {
-        color: var(--gray-800);
-      }
-      .link-contact:hover::after {
-        width: 100%;
-      }
-      .nav-mobile {
-        display: none;
-      }
-      /* ----- Comienzo del Section-Header ------ */
-      .section-header {
-        display: flex;
-        width: 124rem;
-        margin: auto;
-        margin-top: var(--spacing-40);
-      }
-      .section-container {
-        display: flex;
-        width: 50%;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .h1 .headline {
-        font-size: var(--text-3xl);
-        color: var(--gray-500);
-        font-weight: var(--font-semibold);
-      }
-      .h1 {
-        width: 100%;
-        margin-bottom: var(--spacing-4);
-        line-height: var(--spacing-12);
-      }
-      .h1 .name {
-        font-size: var(--text-8xl);
-        font-weight: var(--font-extrabold);
-      }
-      .h1 .rol {
-        font-size: var(--text-6xl);
-        font-weight: var(--font-bold);
-        color: var(--secondary-300);
-      }
-      .section-header .paragraph {
-        display: flex;
-        color: var(--gray-600);
-        font-size: var(--text-2xl);
-        font-weight: var(--font-medium);
-        margin-bottom: var(--spacing-7);
-        /* animation: fadeInAnimation ease 2s; */
-      }
-      .networking-container {
-        display: flex;
-        justify-content: space-between;
-        width: 435px;
-        animation: fadeInAnimation2 ease 3s;
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        user-select: none;
-      }
-      .network-link {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-weight: var(--font-medium);
-        text-decoration: none;
-        color: var(--gray-600);
-        transition: all 300ms ease;
-        position: relative;
-        top: 0px;
-      }
-      .network-link p {
-        font-size: var(--text-sm);
-      }
-      .networking-container .network-link i {
-        padding-bottom: var(--spacing-1);
-        margin-right: var(--spacing-3);
-        color: var(--gray-600);
-        font-size: var(--text-2xl);
-      }
-      .network-link:hover {
-        position: relative;
-        top: -4px;
-        color: var(--secondary-200);
-      }
-      .network-link:hover i {
-        transition: all 300ms ease;
-        color: var(--secondary-200);
-      }
-      .btn-contact {
-        display: flex;
-        align-items: center;
-        font-size: var(--text-sm);
-        font-weight: var(--font-medium);
-        padding: var(--spacing-4) var(--spacing-10);
-        border-radius: var(--rounded-xl);
-        cursor: pointer;
-        text-decoration: none;
-        border: 0;
-        color: var(--gray-50);
-        background-color: var(--secondary-400);
-        transition: all 300ms ease;
-        position: relative;
-        top: 0px;
-      }
-      .btn-contact > i {
-        margin-right: var(--spacing-3);
-      }
-      .btn-contact:hover {
-        background-color: var(--secondary-500);
-        position: relative;
-        top: -4px;
-      }
-      .figures-3d {
-        width: 50%;
-        position: relative;
-        left: 170px;
-        top: -25px;
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        user-select: none;
-      }
-      .figma-3d {
-        position: relative;
-        top: -50px;
-        right: -245px;
-        animation: float-ball-2 24s ease-in-out infinite;
-      }
-      .megaphone-3d {
-        position: relative;
-        top: 175px;
-        right: 370px;
-        animation: float-ball 30s ease-in-out infinite;
-      }
-      .background-hero {
-        background-image: url("https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/background-hero.webp?alt=media&token=2df260b3-bff1-4ce8-af21-bf5cb2deb7d0");
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100vw;
-        height: 1080px;
-        z-index: -1;
-        background-repeat: repeat;
-        background-size: cover;
-      }
-    </style>
     <link
       rel="stylesheet preload"
       as="style"
@@ -318,8 +71,8 @@
       <div class="nav-desktop" id="nav-desktop">
         <a href="./index.html" class="logo link">Maxi Cris</a>
         <div class="links-container">
-          <a class="link-contact" href="/about.html">Sobre mi</a>
-          <a class="link-contact" href="#contact-form">Contacto</a>
+          <a class="link-contact" href="/about.html">About</a>
+          <a class="link-contact" href="#contact-form">Contact</a>
         </div>
       </div>
       <div class="nav-desktop nav-mobile">
@@ -350,21 +103,20 @@
     </nav>
     <header class="section-header">
       <div class="section-container">
-        <h1 class="h1">
-          <span class="headline">Hola! Soy</span><br />
-          <span class="name">Maxi Cris</span>
-          <br />
-          <span class="rol">UX/UI Designer</span>
+        <h1 class="h1-container">
+          <span class="text-3xl cheer">Nice to meet you, I'm Max</span>
+          <span class="text-5xl country">UI Designer based in Argentina</span>
+          <span class="text-3xl currently">Currently designing at @Ripio</span>
         </h1>
-        <p class="paragraph">
-          Agrego valor a través del proceso ayudando a las empresas a crear y
-          diseñar productos digitales haciéndolos intuitivos y atractivos.
+        <p class="text-2xl-regular paragraph">
+          I add value through processes creating intuitive <br />
+          and attractive digital products
         </p>
         <div class="networking-container">
-          <a class="btn-contact" href="mailto:hi@maxicris.com"
-            ><i style="font-size: 20px" class="fa-solid fa-envelope"></i>
-            <p>Contactar</p></a
-          >
+          <a class="network-link" href="mailto:hi@maxicris.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Email</p>
+          </a>
           <a
             class="network-link"
             href="https://twitter.com/_maxicris"
@@ -382,131 +134,47 @@
           </a>
         </div>
       </div>
-      <div class="figures-3d">
-        <img
-          class="figma-3d"
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/figma-3d-min.webp?alt=media&token=f76908d6-c2e8-44c6-992f-f92dbba23cf8"
-          width="295"
-          height="295"
-          alt=""
-        />
-        <img
-          class="megaphone-3d"
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/megaphone-3d-min.webp?alt=media&token=392d04bb-a8d3-476e-beec-17d91034eea4"
-          width="248"
-          height="248"
-          alt=""
-        />
-      </div>
     </header>
-    <div class="background-hero" id="background-hero"></div>
+    <!-- <div class="background-hero" id="background-hero"></div> -->
     <main class="main-container" id="main-container">
       <article class="project-container">
-        <a
-          href="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-2.webp?alt=media&token=b8dc89c9-25cd-4109-95d2-4ff2b4d25bc6"
-          data-lightbox="mygallery"
-        >
+        <div class="project-img">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-2.webp?alt=media&token=b8dc89c9-25cd-4109-95d2-4ff2b4d25bc6"
-            width="600"
-            height="460"
+            src="./assets/images/iphone.png"
+            width="760"
+            height="440"
             alt=""
           />
-        </a>
-      </article>
-      <article class="project-container">
-        <a
-          class="project-container"
-          href="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-5.webp?alt=media&token=1d12e20b-41f3-40d5-a0a3-5cdd85db1223"
-          data-lightbox="mygallery"
-        >
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-5.webp?alt=media&token=1d12e20b-41f3-40d5-a0a3-5cdd85db1223"
-            width="608"
-            height="456"
-            alt=""
-          />
-        </a>
-      </article>
-      <article class="project-container">
-        <a
-          class="project-container"
-          href="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-3.webp?alt=media&token=572701a0-6856-496b-87c7-02a384a4d678"
-          data-lightbox="mygallery"
-        >
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-3.webp?alt=media&token=572701a0-6856-496b-87c7-02a384a4d678"
-            width="600"
-            height="460"
-            alt=""
-          />
-        </a>
-      </article>
-      <article class="project-container">
-        <a
-          class="project-container"
-          href="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-6.webp?alt=media&token=254e7839-0d51-4a8b-82c7-a0a73c68047a"
-          data-lightbox="mygallery"
-        >
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-6.webp?alt=media&token=254e7839-0d51-4a8b-82c7-a0a73c68047a"
-            width="600"
-            height="460"
-            alt=""
-          />
-        </a>
-      </article>
-      <article class="project-container">
-        <a
-          class="project-container"
-          href="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-1.webp?alt=media&token=f500a091-5a16-44d2-a88e-32bdf49e1b4f"
-          data-lightbox="mygallery"
-        >
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-1.webp?alt=media&token=f500a091-5a16-44d2-a88e-32bdf49e1b4f"
-            width="600"
-            height="460"
-            alt=""
-          />
-        </a>
-      </article>
-      <article class="project-container">
-        <a
-          class="project-container"
-          href="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-4.webp?alt=media&token=fdc2bcc7-0869-455c-97d8-3b9fed350cda"
-          data-lightbox="mygallery"
-        >
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Shot-4.webp?alt=media&token=fdc2bcc7-0869-455c-97d8-3b9fed350cda"
-            width="600"
-            height="460"
-            alt=""
-          />
-        </a>
+        </div>
+        <div class="project-description">
+          <h2 class="text-4xl">bla bla bla bla ladflsd jafsdlasdfklmasfm</h2>
+          <p class="text-xl-regular">
+            Laoreet consequat, magna morbi vitae maecenas convallis maecenas
+            donec. Luctus facilisis urna eget erat in enim.
+          </p>
+          <button class="text-xl-medium">Read more</button>
+        </div>
       </article>
     </main>
     <section class="contact-form" id="contact-form">
       <div class="information">
         <div class="information-section">
-          <h2>Hablemos!</h2>
-          <p>
-            Me encuentro en la búsqueda de proyectos relacionados con Web 3. Ya
-            sea que se encuentren trabajando con Blockchain, DeFi, Wallets entre
-            otros nichos. En ciertas oportunidades aprovecho propuestas para
-            trabajar como freelance.
+          <h2 class="text-2xl-semibold">Interested in working together?</h2>
+          <h3 class="text-2xl-regular">I'd love to hear from you</h3>
+          <p class="text-lg-regular">
+            I’m interested in products related to DeFi and Wallets.
+          </p>
+          <p class="text-lg-regular">
+            I occasionally take on freelance opportunities.
           </p>
         </div>
         <div class="networking-container">
-          <a
-            class="btn-contact btn-secondary"
-            href="mailto:hi@maxicris.com"
-            class=""
-            ><i style="font-size: 20px" class="fa-solid fa-envelope"></i>
-            <p>Contactar</p></a
-          >
+          <a class="network-link" href="mailto:hi@maxicris.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Email</p>
+          </a>
           <a
             class="network-link"
-            style="font-size: 20px"
             href="https://twitter.com/_maxicris"
             target="_blank"
           >
@@ -515,29 +183,12 @@
           </a>
           <a
             class="network-link"
-            style="font-size: 23px"
             href="https://www.linkedin.com/in/maxicris/"
             target="_blank"
             ><i class="fa-brands fa-linkedin-in"></i>
             <p>LinkedIn</p>
           </a>
         </div>
-      </div>
-      <div class="balls">
-        <img
-          class="ball-1"
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/image2-3d-min.webp?alt=media&token=3d9c7bcf-26e2-437c-9ed6-917c68135a0f"
-          width="140"
-          height="140"
-          alt="Bola blanca puramente decorativa numero 1"
-        />
-        <img
-          class="ball-2"
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/image1-3d-min.webp?alt=media&token=cc419419-0459-48b0-994f-f8ae481a1b6d"
-          width="140"
-          height="140"
-          alt="Bola blanca puramente decorativa numero 2"
-        />
       </div>
     </section>
     <footer class="footer">
@@ -552,19 +203,7 @@
         Disculpe las molestias.
       </p>
     </div>
-    <script
-      async
-      src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/lightbox-plus-jquery.min.js?alt=media&token=eacb61b3-10c7-4152-8dc9-fa50255ac0db"
-    ></script>
     <script async src="assets/js/index.js"></script>
     <script defer src="https://kit.fontawesome.com/5918e018cc.js"></script>
-    <script>
-      lightbox.option({
-        disableScrolling: true,
-        wrapAround: true,
-        resizeDuration: 50,
-        fadeDuration: 300,
-      });
-    </script>
   </body>
 </html>

@@ -1,30 +1,28 @@
 :root {
   --gray-0: #ffffff;
-  --gray-50: #fafafa;
-  --gray-100: #f4f4f5;
-  --gray-100-50: #f4f4f5ed;
-  --gray-200: #e4e4e7;
-  --gray-300: #d4d4d8;
-  --gray-400: #aeaeb6;
-  --gray-500: #6f6f78;
-  --gray-600: #52525b;
-  --gray-700: #3f3f46;
-  --gray-800: #27272a;
-  --gray-900: #18181b;
-  --gray-990: #0e0e11;
-  --gray-990-90: #0e0e11e6;
+  --gray-20: #f3f3f4;
+  --gray-40: #dadade;
+  --gray-40-50: #dadadeed;
+  --gray-60: #b5b5bc;
+  --gray-80: #91919b;
+  --gray-100: #6d6d78;
+  --gray-120: #575760;
+  --gray-140: #28282c;
+  --gray-160: #18181a;
+  --gray-180: #0c0c0e;
+  --gray-180-90: #0c0c0ee6;
 
-  --secondary-200: #4a94ec;
-  --secondary-300: #166ed4;
-  --secondary-400: #1462bd;
-  --secondary-500: #11529e;
-  --secondary-600: #0c396e;
+  --primary-00: #77aff1;
+  --primary-20: #3387e9;
+  --primary-40: #1462bd;
+  --primary-60: #0f4a8e;
+  --primary-80: #0a315f;
 
   --text-sm: 1.5rem;
   --text-base: 1.6rem;
   --text-lg: 1.8rem;
   --text-xl: 2rem;
-  --text-2xl: 2.2rem;
+  --text-2xl: 2.4rem;
   --text-3xl: 3rem;
   --text-4xl: 3.6rem;
   --text-5xl: 4.8rem;
@@ -32,6 +30,7 @@
   --text-7xl: 7.2rem;
   --text-8xl: 8rem;
 
+  --font-light: 300;
   --font-regular: 400;
   --font-medium: 500;
   --font-semibold: 600;
@@ -70,4 +69,44 @@
   --spacing-32: 12.8rem;
   --spacing-36: 14.4rem;
   --spacing-40: 16rem;
+}
+.text-5xl {
+  font-size: var(--text-5xl);
+  line-height: var(--spacing-12);
+  font-weight: var(--font-bold);
+}
+.text-4xl {
+  font-size: var(--text-4xl);
+  line-height: var(--spacing-9);
+  font-weight: var(--font-medium);
+}
+.text-3xl {
+  font-size: var(--text-3xl);
+  line-height: var(--spacing-9);
+  font-weight: var(--font-medium);
+}
+.text-2xl-semibold {
+  font-size: var(--text-2xl);
+  line-height: var(--spacing-8);
+  font-weight: var(--font-semibold);
+}
+.text-2xl-regular {
+  font-size: var(--text-2xl);
+  line-height: var(--spacing-8);
+  font-weight: var(--font-regular);
+}
+.text-xl-medium {
+  font-size: var(--text-xl);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-medium);
+}
+.text-xl-regular {
+  font-size: var(--text-xl);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-light);
+}
+.text-lg-regular {
+  font-size: var(--text-lg);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-regular);
 }
