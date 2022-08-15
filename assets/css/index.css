@@ -23,7 +23,6 @@ body {
   display: flex;
   justify-content: center;
   height: var(--spacing-20);
-  border-bottom: 2px solid transparent;
   position: sticky;
   top: 0px;
   transform: translateY(0px);
@@ -42,6 +41,7 @@ body {
   opacity: 0;
 }
 .display-flex-nav {
+  background-color: var(--gray-160);
   transition: 0.5s ease-out;
   transform: translateY(0px);
   opacity: 1;
@@ -67,40 +67,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 20rem;
-  height: 100%;
+  width: 18%;
 }
 .links-container a {
   display: flex;
   height: 100%;
   align-items: center;
   text-decoration: none;
-  color: var(--gray-60);
-  font-size: var(--text-base);
-  font-weight: var(--font-medium);
+  color: var(--gray-80);
   transition: all 800ms ease;
-  padding: 0 var(--spacing-1);
-  border-bottom: 4px solid transparent;
+  padding: var(--spacing-1-5) var(--spacing-5);
+  border-radius: var(--rounded-dm);
 }
-.link-contact {
-  position: relative;
-}
-.link-contact::after {
-  content: " ";
-  position: absolute;
-  width: 0%;
-  height: 4px;
-  border-radius: 10px;
-  background-color: var(--secondary-00);
-  bottom: -5px;
-  left: 0;
-  transition: 0.8s;
-}
-.link-contact:hover {
-  color: var(--gray-800);
-}
-.link-contact:hover::after {
-  width: 100%;
+
+.link-nav:hover {
+  color: var(--gray-00);
+  background-color: var(--gray-160);
 }
 .nav-mobile {
   display: none;
@@ -130,17 +112,17 @@ body {
   margin-bottom: var(--spacing-2);
 }
 .currently {
-  color: var(--primary-20);
+  color: var(--primary-00);
 }
 .section-header .paragraph {
   display: flex;
   color: var(--gray-80);
-  margin-bottom: var(--spacing-12);
+  margin-bottom: var(--spacing-6);
 }
 .networking-container {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 55%;
   animation: fadeInAnimation2 ease 3s;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -150,53 +132,20 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--gray-600);
-  transition: all 300ms ease;
+  color: var(--gray-00);
+  transition: all 400ms ease;
   position: relative;
   top: 0px;
+  padding-bottom: var(--spacing-1-5);
+  border-bottom: 3px solid transparent;
 }
 .network-link p {
   font-size: var(--text-lg);
   padding: var(--spacing-1) 0 0 var(--spacing-3);
 }
-.networking-container .network-link i {
-  padding-bottom: var(--spacing-1);
-  margin-right: var(--spacing-3);
-  color: var(--gray-600);
-  font-size: var(--text-2xl);
-}
 .network-link:hover {
   position: relative;
-  top: -4px;
-  color: var(--secondary-00);
-}
-.network-link:hover i {
-  transition: all 300ms ease;
-  color: var(--secondary-00);
-}
-.btn-contact {
-  display: flex;
-  align-items: center;
-  font-size: var(--text-sm);
-  font-weight: var(--font-medium);
-  padding: var(--spacing-4) var(--spacing-10);
-  border-radius: var(--rounded-xl);
-  cursor: pointer;
-  text-decoration: none;
-  border: 0;
-  color: var(--gray-50);
-  background-color: var(--primary-40);
-  transition: all 300ms ease;
-  position: relative;
-  top: 0px;
-}
-.btn-contact > i {
-  margin-right: var(--spacing-3);
-}
-.btn-contact:hover {
-  background-color: var(--primary-60);
-  position: relative;
-  top: -4px;
+  border-bottom: 3px solid var(--primary-60);
 }
 .background-hero {
   position: absolute;
@@ -207,8 +156,11 @@ body {
 }
 /* ------------- Comienzo del Main ------------- */
 .main-container {
+  display: flex;
+  flex-direction: column;
   width: 124rem;
   margin: auto;
+  gap: var(--spacing-20);
 }
 .project-container {
   display: flex;
@@ -249,7 +201,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-12);
+  gap: var(--spacing-5);
   width: 55%;
   padding: var(--spacing-12);
 }
@@ -260,7 +212,7 @@ body {
   color: var(--gray-80);
 }
 .information .networking-container {
-  width: 65%;
+  width: 70%;
 }
 /* ---------- Comienzo del Footer ---------- */
 .footer {
@@ -271,7 +223,7 @@ body {
   padding-bottom: var(--spacing-8);
 }
 .footer p {
-  color: var(--gray-80);
+  color: var(--gray-100);
 }
 .name-color {
   color: var(--primary-40);
@@ -279,15 +231,19 @@ body {
 .responsive-time {
   display: none;
 }
-.div {
+.background-footer {
   width: 100%;
   display: flex;
   justify-content: center;
   position: absolute;
   bottom: 0;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.3;
 }
+.background-footer svg {
+  width: 100%;
+}
+
 /* --------- Animations/Transitions --------- */
 @keyframes fadeInAnimation {
   0% {

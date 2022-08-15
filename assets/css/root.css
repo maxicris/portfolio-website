@@ -120,3 +120,15 @@
   line-height: var(--spacing-7);
   font-weight: var(--font-regular);
 }
+
+.text-base-regular {
+  font-size: var(--text-base);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-regular);
+}
+
+.text-sm-regular {
+  font-size: var(--text-sm);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-regular);
+}
