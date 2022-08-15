@@ -6,6 +6,9 @@ html {
   height: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  user-select: none;
 }
 body {
   width: 100%;
@@ -97,6 +100,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  animation: fadeInAnimation2 ease 2s;
 }
 .h1-container {
   display: flex;
@@ -124,9 +128,6 @@ body {
   justify-content: space-between;
   width: 55%;
   animation: fadeInAnimation2 ease 3s;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  user-select: none;
 }
 .network-link {
   display: flex;
@@ -137,7 +138,6 @@ body {
   position: relative;
   top: 0px;
   padding-bottom: var(--spacing-1-5);
-  border-bottom: 3px solid transparent;
 }
 .network-link p {
   font-size: var(--text-lg);
@@ -145,7 +145,7 @@ body {
 }
 .network-link:hover {
   position: relative;
-  border-bottom: 3px solid var(--primary-60);
+  top: -3px;
 }
 .background-hero {
   position: absolute;
