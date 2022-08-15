@@ -77,13 +77,18 @@
 }
 .text-4xl {
   font-size: var(--text-4xl);
-  line-height: var(--spacing-9);
+  line-height: var(--spacing-12);
   font-weight: var(--font-medium);
 }
 .text-3xl {
   font-size: var(--text-3xl);
   line-height: var(--spacing-9);
   font-weight: var(--font-medium);
+}
+.text-3xl-regular {
+  font-size: var(--text-3xl);
+  line-height: var(--spacing-9);
+  font-weight: var(--font-regular);
 }
 .text-2xl-semibold {
   font-size: var(--text-2xl);
@@ -103,7 +108,12 @@
 .text-xl-regular {
   font-size: var(--text-xl);
   line-height: var(--spacing-7);
-  font-weight: var(--font-light);
+  font-weight: var(--font-regular);
+}
+.text-lg-medium {
+  font-size: var(--text-lg);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-medium);
 }
 .text-lg-regular {
   font-size: var(--text-lg);

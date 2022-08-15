@@ -16,6 +16,7 @@ body {
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  position: relative;
 }
 /* --------------- Comienzo del nav-bar ---------------- */
 .nav {
@@ -41,14 +42,12 @@ body {
   opacity: 0;
 }
 .display-flex-nav {
-  background-color: #18181af1;
-  /* backdrop-filter: blur (40px); */
   transition: 0.5s ease-out;
   transform: translateY(0px);
   opacity: 1;
 }
-.border-bottom-nav {
-  border-bottom: 1px solid var(--gray-160);
+.background-nav-none {
+  background-color: transparent;
 }
 .logo {
   color: var(--gray-20);
@@ -241,30 +240,15 @@ body {
 /* --------- Comienzo del Contact Form --------- */
 .contact-form {
   display: flex;
+  justify-content: center;
   width: 124rem;
-  margin: var(--spacing-28) auto var(--spacing-12);
-  border-radius: var(--rounded-3xl);
-  background-color: var(--gray-160);
-  border: 1px solid var(--gray-140);
-  position: relative;
-}
-.contact-form::after {
-  content: " ";
-  position: absolute;
-  width: 0%;
-  height: 6px;
-  border-radius: 100px 100px 0 0;
-  background-color: var(--primary-60);
-  bottom: 1;
-  left: 0;
-  transition: 0.5s;
-}
-.contact-form:hover::after {
-  width: 100%;
+  margin: var(--spacing-36) auto var(--spacing-20);
+  text-align: center;
 }
 .information {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--spacing-12);
   width: 55%;
   padding: var(--spacing-12);
@@ -278,30 +262,31 @@ body {
 .information .networking-container {
   width: 65%;
 }
-.btn-secondary {
-  color: var(--gray-50);
-  background-color: var(--gray-800);
-}
-.btn-secondary:hover {
-  background-color: var(--gray-990);
-}
 /* ---------- Comienzo del Footer ---------- */
 .footer {
   display: flex;
   justify-content: center;
   width: 100vw;
-  padding-bottom: var(--spacing-6);
+  height: 60px;
+  padding-bottom: var(--spacing-8);
 }
 .footer p {
-  color: var(--gray-600);
-  font-size: var(--text-base);
-  font-weight: var(--font-semibold);
+  color: var(--gray-80);
 }
 .name-color {
   color: var(--primary-40);
 }
 .responsive-time {
   display: none;
+}
+.div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.7;
 }
 /* --------- Animations/Transitions --------- */
 @keyframes fadeInAnimation {
