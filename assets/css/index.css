@@ -165,29 +165,39 @@ body {
 .project-container {
   display: flex;
   gap: var(--spacing-16);
-  padding: var(--spacing-10);
+  padding: var(--spacing-10) var(--spacing-16) 0 var(--spacing-10);
   background-color: var(--gray-160);
   border-radius: var(--rounded-3xl);
+  border: 1px solid transparent;
+  transition: all 700ms ease;
+}
+.project-container:hover {
+  cursor: pointer;
+  background-color: var(--gray-140);
+  border: 1px solid var(--gray-80);
+  transform: translatey(-10px);
+  transform: scale(103%);
 }
 .project-img {
   width: 100%;
 }
-.project-img img {
-  border-radius: var(--rounded-2xl);
-}
 .project-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
   margin: auto 0;
 }
-.project-description p {
-  margin-top: var(--spacing-6);
+.project-description > p {
   color: var(--gray-80);
+  width: 85%;
 }
-.project-description button {
-  margin-top: var(--spacing-12);
-  background: transparent;
-  border: none;
-  padding: 0;
-  color: var(--gray-20);
+.project-description .button {
+  display: flex;
+  align-items: center;
+  color: var(--primary-40);
+}
+.project-description .button svg path {
+  stroke: var(--primary-40);
 }
 /* --------- Comienzo del Contact Form --------- */
 .contact-form {
