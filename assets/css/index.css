@@ -162,6 +162,10 @@ body {
   margin: auto;
   gap: var(--spacing-20);
 }
+.main-container a {
+  text-decoration: none;
+  color: var(--gray-20);
+}
 .project-container {
   display: flex;
   gap: var(--spacing-16);
