@@ -195,7 +195,7 @@ body {
 .project-description .button {
   display: flex;
   align-items: center;
-  color: var(--primary-40);
+  color: var(--primary-20);
 }
 .project-description .button svg path {
   stroke: var(--primary-40);
@@ -237,7 +237,7 @@ body {
   color: var(--gray-100);
 }
 .name-color {
-  color: var(--primary-40);
+  color: var(--gray-80);
 }
 .responsive-time {
   display: none;

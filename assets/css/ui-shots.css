@@ -1,0 +1,27 @@
+.main-container {
+  margin-top: 16rem;
+}
+
+.portadaimg {
+  width: 100%;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-article {
+  width: 100%;
+  background-color: var(--gray-160);
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 1.6rem;
+}
+.container-article img {
+  width: 80%;
+  border-radius: 1rem;
+}
