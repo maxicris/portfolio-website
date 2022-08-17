@@ -169,14 +169,13 @@ body {
 .project-container {
   display: flex;
   gap: var(--spacing-16);
-  padding: var(--spacing-10) var(--spacing-10) var(--spacing-10)
-    var(--spacing-10);
+  padding: var(--spacing-10);
   background-color: var(--gray-160);
   border-radius: var(--rounded-3xl);
   border: 1px solid transparent;
   transition: all 800ms ease;
 }
-.project-container:hover {
+.card-hover:hover {
   cursor: pointer;
   background-color: var(--gray-140);
   border: 1px solid var(--gray-120);
@@ -184,13 +183,14 @@ body {
   transform: scale(102%);
 }
 .project-img {
-  width: 100%;
+  width: 60%;
 }
 .project-description {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-5);
   margin: auto 0;
+  width: 40%;
 }
 .project-description > p {
   color: var(--gray-60);
