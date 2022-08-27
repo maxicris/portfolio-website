@@ -97,6 +97,7 @@ body {
   margin: var(--spacing-40) auto 20rem;
 }
 .section-container {
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -106,27 +107,33 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-2);
 }
 .cheer {
   margin-bottom: var(--spacing-2);
-  color: var(--gray-80);
+  color: var(--gray-20);
 }
 .country {
   margin-bottom: var(--spacing-2);
 }
 .currently {
-  color: var(--primary-20);
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--primary-20),
+    var(--primary-40)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .section-header .paragraph {
   display: flex;
-  color: var(--gray-60);
-  margin-bottom: var(--spacing-6);
+  color: var(--gray-80);
+  margin-bottom: var(--spacing-12);
 }
 .networking-container {
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 70%;
   animation: fadeInAnimation2 ease 3s;
 }
 .network-link {
