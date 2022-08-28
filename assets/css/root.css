@@ -10,13 +10,15 @@
   --gray-140: #28282c;
   --gray-160: #18181a;
   --gray-180: #0c0c0e;
-  --gray-180-90: #0c0c0ee6;
+  --gray-180-90: #0e0e10b3;
 
   --primary-00: #77aff1;
   --primary-20: #3387e9;
   --primary-40: #1462bd;
   --primary-60: #0f4a8e;
   --primary-80: #0a315f;
+
+  --neon: hsl (317 100% 54%);
 
   --text-sm: 1.5rem;
   --text-base: 1.6rem;
@@ -71,9 +73,9 @@
   --spacing-40: 16rem;
 }
 .text-5xl {
-  font-size: var(--text-6xl);
-  line-height: var(--spacing-16);
-  font-weight: var(--font-bold);
+  font-size: var(--text-5xl);
+  line-height: var(--spacing-12);
+  font-weight: var(--font-semibold);
 }
 .text-4xl {
   font-size: var(--text-4xl);
@@ -89,6 +91,18 @@
   font-size: var(--text-3xl);
   line-height: var(--spacing-10);
   font-weight: var(--font-regular);
+}
+.gradient-custom {
+  font-size: 28px;
+  line-height: var(--spacing-10);
+  font-weight: var(--font-medium);
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--primary-00),
+    var(--primary-40)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .text-2xl-semibold {
   font-size: var(--text-2xl);
