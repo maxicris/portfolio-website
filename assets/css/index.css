@@ -190,8 +190,8 @@ body {
   width: 40%;
 }
 .project-description > p {
-  color: var(--gray-60);
-  width: 85%;
+  color: var(--gray-80);
+  width: 80%;
   margin-bottom: var(--spacing-16);
 }
 .project-description .button {
