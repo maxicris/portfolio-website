@@ -50,12 +50,14 @@ body {
   transition: 0.4s ease-out;
   transform: translateY(0px);
   border: 1px solid var(--gray-140);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
   background-color: var(--gray-180-40);
 }
 .background-nav-none {
   background-color: transparent;
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
   border: 1px solid transparent;
 }
 .logo {
@@ -72,14 +74,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 18%;
+  width: 20rem;
 }
 .links-container a {
   display: flex;
   height: 100%;
   align-items: center;
   text-decoration: none;
-  color: var(--gray-80);
+  color: var(--gray-60);
   transition: all 800ms ease;
   padding: var(--spacing-1-5) var(--spacing-5);
   border-radius: var(--rounded-dm);
@@ -88,9 +90,6 @@ body {
 .link-nav:hover {
   color: var(--gray-00);
   background-color: var(--gray-140);
-}
-.nav-mobile {
-  display: none;
 }
 /* ------------ Comienzo del Section-Header ------------- */
 .section-header {

@@ -1,8 +1,19 @@
+.display-flex-nav {
+  border: 1px solid var(--gray-140);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  background-color: var(--gray-180-40);
+}
 .main-container {
-  margin-top: 12rem;
+  margin-top: 20rem;
+}
+.portada {
+  width: 94%;
+  margin: -100px auto;
 }
 .portadaimg {
   width: 100%;
+  border-radius: 32px;
 }
 .shots {
   width: 90%;
