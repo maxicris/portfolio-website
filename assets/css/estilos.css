@@ -9,7 +9,7 @@
 }
 .text-4xl {
   font-size: var(--text-4xl);
-  line-height: var(--spacing-10);
+  /* line-height: var(--spacing-10); */
   font-weight: var(--font-bold);
 }
 .text-3xl-bold {
@@ -52,6 +52,11 @@
   line-height: var(--spacing-7);
   font-weight: var(--font-regular);
 }
+.text-lg-bold {
+  font-size: var(--text-lg);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-bold);
+}
 .text-lg-medium {
   font-size: var(--text-lg);
   line-height: var(--spacing-7);
@@ -89,11 +94,7 @@
 }
 
 .gradient-custom {
-  background: -webkit-linear-gradient(
-    45deg,
-    var(--primary-00),
-    var(--primary-40)
-  );
+  background: -webkit-linear-gradient(45deg, #667eea, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

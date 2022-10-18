@@ -11,7 +11,7 @@
   --gray-150: #19191c;
   --gray-160: rgb(20, 20, 22);
   --gray-180: rgb(13, 13, 14);
-  --gray-180-40: rgba(22, 22, 24, 0.6);
+  --gray-180-90: rgba(22, 22, 24, 0.96);
 
   --primary-00: #77aff1;
   --primary-20: #3387e9;
@@ -24,7 +24,7 @@
   --text-lg: 1.8rem;
   --text-xl: 2rem;
   --text-2xl: 2.4rem;
-  --text-3xl: 3rem;
+  --text-3xl: 2.8rem;
   --text-4xl: 3.6rem;
   --text-5xl: 4.8rem;
   --text-6xl: 6rem;
