@@ -1,0 +1,99 @@
+.text-6xl {
+  font-size: var(--text-6xl);
+  font-weight: var(--font-extrabold);
+}
+.text-5xl {
+  font-size: var(--text-5xl);
+  line-height: var(--spacing-12);
+  font-weight: var(--font-bold);
+}
+.text-4xl {
+  font-size: var(--text-4xl);
+  line-height: var(--spacing-10);
+  font-weight: var(--font-bold);
+}
+.text-3xl-bold {
+  font-size: var(--text-3xl);
+  line-height: var(--spacing-10);
+  font-weight: var(--font-bold);
+}
+.text-3xl-medium {
+  font-size: var(--text-3xl);
+  line-height: var(--spacing-10);
+  font-weight: var(--font-medium);
+}
+.text-3xl-regular {
+  font-size: var(--text-3xl);
+  line-height: var(--spacing-10);
+  font-weight: var(--font-regular);
+}
+.text-2xl-bold {
+  font-size: var(--text-2xl);
+  line-height: var(--spacing-8);
+  font-weight: var(--font-bold);
+}
+.text-2xl-medium {
+  font-size: var(--text-2xl);
+  line-height: var(--spacing-8);
+  font-weight: var(--font-medium);
+}
+.text-2xl-regular {
+  font-size: var(--text-2xl);
+  line-height: var(--spacing-9);
+  font-weight: var(--font-regular);
+}
+.text-xl-medium {
+  font-size: var(--text-xl);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-medium);
+}
+.text-xl-regular {
+  font-size: var(--text-xl);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-regular);
+}
+.text-lg-medium {
+  font-size: var(--text-lg);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-medium);
+}
+.text-lg-regular {
+  font-size: var(--text-lg);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-regular);
+}
+.text-base-medium {
+  font-size: var(--text-base);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-bold);
+}
+.text-base-regular {
+  font-size: var(--text-base);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-regular);
+}
+.text-sm-bold {
+  font-size: var(--text-sm);
+  line-height: var(--spacing-6);
+  font-weight: var(--font-bold);
+}
+.text-sm-medium {
+  font-size: var(--text-sm);
+  line-height: var(--spacing-6);
+  font-weight: var(--font-medium);
+}
+.text-sm-regular {
+  font-size: var(--text-sm);
+  line-height: var(--spacing-7);
+  font-weight: var(--font-regular);
+}
+
+.gradient-custom {
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--primary-00),
+    var(--primary-40)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

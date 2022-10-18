@@ -15,17 +15,18 @@ body {
   height: fit-content;
   background-color: var(--gray-180);
   color: var(--gray-20);
-  font-family: "Rubik", sans-serif;
+  font-family: "Satoshi", sans-serif;
   animation: fadeInAnimation ease 2s;
   animation-fill-mode: forwards;
   position: relative;
 }
+
 /* --------------- Nav bar ---------------- */
 .nav {
   width: 100vw;
   display: flex;
   justify-content: center;
-  height: var(--spacing-16);
+  height: var(--spacing-20);
   margin: 0 auto;
   position: sticky;
   top: 0;
@@ -61,9 +62,8 @@ body {
 .logo {
   color: var(--gray-20);
   font-size: 22px;
-  font-weight: var(--font-semibold);
+  font-weight: var(--font-extrabold);
   text-decoration: none;
-  transition: all 400ms ease;
 }
 .links-container {
   display: flex;
@@ -103,7 +103,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: var(--spacing-2);
+  margin-left: -4px;
 }
 .cheer {
   margin-bottom: var(--spacing-2);
@@ -111,7 +111,7 @@ body {
 }
 .section-header .paragraph {
   display: flex;
-  width: 70%;
+  /* width: 70%; */
   color: var(--gray-80);
   margin-bottom: var(--spacing-12);
 }
@@ -132,7 +132,6 @@ body {
   padding-bottom: var(--spacing-1-5);
 }
 .network-link p {
-  font-size: var(--text-base);
   padding: var(--spacing-1) 0 0 var(--spacing-3);
 }
 .network-link:hover {
@@ -150,22 +149,26 @@ body {
 /* ------------- Main ------------- */
 .main-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   width: 124rem;
   margin: auto;
-  gap: var(--spacing-20);
+  gap: var(--spacing-12);
 }
 .main-container a {
+  width: 100%;
   text-decoration: none;
   color: var(--gray-20);
 }
 .project-container {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   transition: all 600ms ease;
   position: relative;
   top: 0px;
   border-radius: var(--rounded-3xl);
   overflow: hidden;
+  border: 2px solid var(--gray-140);
 }
 .card-hover:hover {
   cursor: pointer;
@@ -174,8 +177,8 @@ body {
   transform: scale(101%);
 }
 .project-img {
-  padding: var(--spacing-10);
-  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  padding: var(--spacing-8) var(--spacing-8) 0 var(--spacing-8);
+  background-color: var(--gray-150);
 }
 .project-img img {
   border-radius: var(--rounded-2xl);
@@ -183,19 +186,17 @@ body {
 .project-description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--gray-150);
-  gap: var(--spacing-5);
-  width: 40%;
-  padding: var(--spacing-16);
-  border: 2px solid var(--gray-140);
-  border-right: 0;
-  border-radius: var(--rounded-3xl) 0 0 var(--rounded-3xl);
+  gap: var(--spacing-2);
+  width: 100%;
+  height: 100%;
+  padding: var(--spacing-7) var(--spacing-10);
 }
-.project-description > p {
+.project-description .project-header > p {
   color: var(--gray-80);
   width: 95%;
-  margin-bottom: var(--spacing-6);
+  margin-bottom: var(--spacing-4);
 }
 .project-description .button {
   display: flex;
@@ -204,6 +205,9 @@ body {
 }
 .project-description .button svg path {
   stroke: var(--primary-40);
+}
+.project-header > h2 {
+  margin-bottom: var(--spacing-2);
 }
 /* --------- Comienzo del Contact Form --------- */
 .contact-form {

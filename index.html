@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Maxi Cris | Portfolio</title>
+    <title>Maxi Cris ✦ Portfolio</title>
     <meta
       name="description"
       content="Maxi is a Designer working remotely from Argentina. He helps business to design intuitive websites and apps people love to use."
@@ -22,11 +22,11 @@
     />
     <meta
       property="og:description"
-      content="Maxi is a UI Designer • Product Designer working remotely from Argentina. He helps business to design intuitive websites and apps people love to use."
+      content="Maxi is a UI Designer ✦ Product Designer working remotely from Argentina. He helps business to design intuitive websites and apps people love to use."
     />
     <meta
       name="twitter:description"
-      content="Maxi is a UI Designer • Product Designer working remotely from Argentina. He helps business to design intuitive websites and apps people love to use."
+      content="Maxi is a UI Designer ✦ Product Designer working remotely from Argentina. He helps business to design intuitive websites and apps people love to use."
     />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -46,10 +46,8 @@
       type="text/css"
       href="./assets/css/root.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -64,24 +62,30 @@
       type="text/css"
       href="./assets/css/media-query.css"
     />
+    <link
+      rel="stylesheet preload"
+      as="style"
+      type="text/css"
+      href="./assets/css/estilos.css"
+    />
   </head>
   <body>
     <nav class="nav" id="nav">
       <div class="nav-desktop" id="nav-desktop">
-        <a href="./index.html" class="logo link">Maxi Cris</a>
+        <a href="./index.html" class="logo">Maxi Cris</a>
         <div class="links-container">
-          <a class="link-nav text-sm-medium" href="">About</a>
-          <a class="link-nav text-sm-medium" href="#contact-form">Contact</a>
+          <a class="link-nav text-sm-bold" href="">About</a>
+          <a class="link-nav text-sm-bold" href="#contact-form">Contact</a>
         </div>
       </div>
     </nav>
     <header class="section-header">
       <div class="section-container">
-        <h1 class="h1-container">
-          <span class="text-6xl cheer gradient-custom">Hey there, I'm Max</span>
+        <h1 class="h1-container text-6xl cheer gradient-custom">
+          Hey there, I'm Max
         </h1>
-        <p class="text-2xl-regular paragraph">
-          I'm UI Designer • Product Designer — I add value through processes
+        <p class="text-2xl-medium paragraph">
+          I'm UI Designer ✦ Product Designer ~ I add value through processes
           creating intuitive and attractive digital products
         </p>
         <div class="networking-container">
@@ -395,14 +399,24 @@
     <main class="main-container" id="main-container">
       <a href="/uishots.html">
         <article class="project-container card-hover">
+          <div class="project-img">
+            <img
+              src="/assets/images/daily_cover.png"
+              width="664"
+              height="442"
+              alt=""
+            />
+          </div>
           <div class="project-description">
-            <h2 class="text-4xl">Daily UI Collection</h2>
-            <p class="text-xl-regular">
-              A compilation of design challenges where new layouts had to be
-              made daily for different types of projects.
-            </p>
+            <div class="project-header">
+              <h2 class="text-3xl-bold">Daily UI Collection</h2>
+              <p class="text-xl-medium">
+                A compilation of design challenges where new layouts had to be
+                made daily for different types of projects.
+              </p>
+            </div>
             <div class="button">
-              <p class="text-lg-medium">See more</p>
+              <p class="text-lg-medium">See colection</p>
               <svg
                 width="30"
                 height="30"
@@ -420,20 +434,22 @@
               </svg>
             </div>
           </div>
-          <div class="project-img">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/daily_cover.webp?alt=media&token=b81557e4-7234-4916-a7eb-614f4300d7cf"
-              width="664"
-              height="442"
-              alt=""
-            />
-          </div>
         </article>
       </a>
       <article class="project-container">
+        <div class="project-img">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/wallet_cover.webp?alt=media&token=3d6eb2fc-d5af-48ec-89d7-981305845303"
+            width="664"
+            height="442"
+            alt=""
+          />
+        </div>
         <div class="project-description">
-          <h2 class="text-4xl">Wallet DeFi Web3</h2>
-          <p class="text-xl-regular">Work in progress.</p>
+          <div class="project-header">
+            <h2 class="text-3xl-bold">Wallet DeFi Web3</h2>
+            <p class="text-xl-medium">Work in progress.</p>
+          </div>
           <div class="button">
             <p class="text-lg-medium">Coming soon</p>
             <svg
@@ -453,14 +469,6 @@
             </svg>
           </div>
         </div>
-        <div class="project-img">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/wallet_cover.webp?alt=media&token=3d6eb2fc-d5af-48ec-89d7-981305845303"
-            width="664"
-            height="442"
-            alt=""
-          />
-        </div>
       </article>
     </main>
     <section class="contact-form" id="contact-form">
@@ -469,8 +477,8 @@
           <h2 class="text-4xl gradient-custom">
             ¿Interested in working together?
           </h2>
-          <h3 class="text-3xl">I'd love to hear from you</h3>
-          <p class="text-xl-regular">
+          <h3 class="text-3xl-bold">I'd love to hear from you</h3>
+          <p class="text-xl-medium">
             I’m interested in products related to Web3 projects.
           </p>
           <p class="text-xl-regular">
@@ -491,7 +499,7 @@
                 fill="#F3F3F4"
               />
             </svg>
-            <p>Email</p>
+            <p class="text-base-medium">Email</p>
           </a>
           <a
             class="network-link"
@@ -510,7 +518,7 @@
                 fill="#F3F3F4"
               />
             </svg>
-            <p>Twitter</p>
+            <p class="text-base-medium">Twitter</p>
           </a>
           <a
             class="network-link"
@@ -533,13 +541,13 @@
                 fill="#F3F3F4"
               />
             </svg>
-            <p>LinkedIn</p>
+            <p class="text-base-medium">LinkedIn</p>
           </a>
         </div>
       </div>
     </section>
     <footer class="footer">
-      <p class="text-base-regular">
+      <p class="text-base-medium">
         Portfolio created based on mate and coffee -
         <span class="name-color"> 2022 Maxi Cris</span>
       </p>
