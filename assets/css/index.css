@@ -16,12 +16,11 @@ body {
   height: fit-content;
   background-color: var(--gray-180);
   color: var(--gray-20);
-  font-family: "Satoshi", sans-serif;
+  font-family: "Lexend", sans-serif;
   animation: fadeInAnimation ease 1.5s;
   animation-fill-mode: forwards;
   position: relative;
 }
-
 /* --------------- Nav bar ---------------- */
 .nav {
   width: 100vw;
@@ -58,8 +57,8 @@ body {
 }
 .logo {
   color: var(--gray-20);
-  font-size: 22px;
-  font-weight: var(--font-extrabold);
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
   text-decoration: none;
 }
 .links-container {
@@ -76,7 +75,7 @@ body {
   color: var(--gray-60);
   transition: all 800ms ease;
   padding: var(--spacing-1-5) var(--spacing-5);
-  border-radius: var(--rounded-dm);
+  border-radius: var(--rounded-lg);
 }
 
 /* ------------ Section Header ------------- */
@@ -86,7 +85,6 @@ body {
   margin: var(--spacing-40) auto 18rem;
 }
 .section-container {
-  width: 55%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -95,19 +93,21 @@ body {
 .h1-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-left: -4px;
-  margin-bottom: var(--spacing-2);
+  margin-left: -2px;
+}
+.section-container span {
+  margin-bottom: var(--spacing-4);
 }
 .section-header .paragraph {
   display: flex;
   color: var(--gray-80);
-  margin-bottom: var(--spacing-12);
+  margin-bottom: var(--spacing-9);
+  width: 60%;
 }
 .networking-container {
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 47%;
   animation: fadeInAnimation2 ease 3.5s;
 }
 .network-link {
@@ -118,7 +118,7 @@ body {
   transition: all 300ms ease;
   position: relative;
   top: 0px;
-  padding-bottom: var(--spacing-1-5);
+  padding: var(--spacing-2) var(--spacing-4); /* Mayor hit-box */
 }
 .network-link p {
   padding: var(--spacing-1) 0 0 var(--spacing-3);
@@ -126,6 +126,17 @@ body {
 .network-link:hover {
   position: relative;
   top: -3px;
+}
+.network-link:hover p {
+  color: #3972b3;
+}
+.networking-container a svg path {
+  /* Color Icons*/
+  fill: white;
+}
+.networking-container a:hover svg path {
+  /* Color Icons Hover*/
+  fill: #3972b3;
 }
 .background-hero {
   position: absolute;
@@ -143,12 +154,12 @@ body {
   gap: var(--spacing-12);
 }
 .main-container a {
-  width: 100%;
   text-decoration: none;
-  color: var(--gray-20);
 }
 .project-container {
   width: 100%;
+  max-width: 596px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-7);
@@ -156,7 +167,7 @@ body {
   position: relative;
   padding: var(--spacing-8);
   top: 0px;
-  border-radius: var(--rounded-3xl);
+  border-radius: var(--rounded-4xl);
   background-color: var(--gray-150);
   border: 2px solid var(--gray-140);
 }
@@ -168,16 +179,21 @@ body {
 }
 .coming-soon {
   background-color: var(--gray-180);
+  cursor: initial;
+}
+.project-img {
+  display: flex;
 }
 .project-img img {
+  width: 100%;
   border-radius: var(--rounded-2xl);
+  background: linear-gradient(113.65deg, #2a78d3 0%, #5e89bb 100.84%);
 }
 .project-description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: var(--spacing-2);
-  width: 100%;
   height: 100%;
 }
 .project-description .project-header > p {
@@ -208,7 +224,6 @@ body {
   align-items: center;
   gap: var(--spacing-12);
   width: 55%;
-  padding: var(--spacing-12);
 }
 .information-section h3 {
   margin-bottom: var(--spacing-3);
@@ -223,15 +238,10 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  height: 60px;
   padding-bottom: var(--spacing-8);
 }
 .footer p {
   color: var(--gray-100);
-}
-.logo-footer {
-  color: var(--gray-60);
 }
 .responsive-time {
   display: none;

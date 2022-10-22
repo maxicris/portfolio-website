@@ -1,4 +1,5 @@
 :root {
+  /* Colors */
   --gray-0: #ffffff;
   --gray-20: #f3f3f4;
   --gray-40: #dadade;
@@ -9,9 +10,11 @@
   --gray-120: #575760;
   --gray-140: #28282c;
   --gray-150: #19191c;
-  --gray-160: rgb(20, 20, 22);
-  --gray-180: rgb(13, 13, 14);
-  --gray-180-90: rgba(22, 22, 24, 0.96);
+  --gray-160: #141416;
+  --gray-180: #0d0d0e;
+  --gray-180-90: #19191cf5;
+
+  --text-level-1: var(--gray-0);
 
   --primary-00: #6bb0ff;
   --primary-20: #3387e9;
@@ -24,25 +27,21 @@
   --text-lg: 1.8rem;
   --text-xl: 2rem;
   --text-2xl: 2.4rem;
-  --text-3xl: 2.8rem;
+  --text-3xl: 3rem;
   --text-4xl: 3.6rem;
   --text-5xl: 4.8rem;
   --text-6xl: 6rem;
-  --text-7xl: 7.2rem;
-  --text-8xl: 8rem;
 
   --font-regular: 400;
-  --font-medium: 500;
+  --font-semibold: 600;
   --font-bold: 700;
-  --font-extrabold: 900;
 
-  --rounded-sm: 0.2rem;
   --rounded: 0.4rem;
-  --rounded-dm: 0.6rem;
   --rounded-lg: 0.8rem;
   --rounded-xl: 1.2rem;
   --rounded-2xl: 1.6rem;
-  --rounded-3xl: 2.4rem;
+  --rounded-3xl: 2rem;
+  --rounded-4xl: 2.4rem;
   --rounded-full: 50rem;
 
   --spacing-1: 0.4rem;
