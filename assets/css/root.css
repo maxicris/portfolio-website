@@ -1,20 +1,16 @@
 :root {
   /* Colors */
-  --gray-0: #ffffff;
-  --gray-20: #f3f3f4;
-  --gray-40: #dadade;
-  --gray-40-50: #dadadeed;
-  --gray-60: #b5b5bc;
-  --gray-80: #91919b;
-  --gray-100: #6d6d78;
-  --gray-120: #575760;
-  --gray-140: #28282c;
-  --gray-150: #19191c;
-  --gray-160: #141416;
-  --gray-180: #0d0d0e;
-  --gray-180-90: #19191cf5;
-
-  --text-level-1: var(--gray-0);
+  --gray-50: #f3f3f4;
+  --gray-100: #dadade;
+  --gray-200: #b5b5bc;
+  --gray-300: #91919b;
+  --gray-400: #6d6d78;
+  --gray-500: #575760;
+  --gray-600: #28282c;
+  --gray-700: #19191c;
+  --gray-800: #141416;
+  --gray-900: #0d0d0e;
+  --gray-900-96: #19191cf5;
 
   --primary-00: #6bb0ff;
   --primary-20: #3387e9;
@@ -22,7 +18,7 @@
   --primary-60: #0f4a8e;
   --primary-80: #0a315f;
 
-  --text-sm: 1.5rem;
+  --text-sm: 1.4rem;
   --text-base: 1.6rem;
   --text-lg: 1.8rem;
   --text-xl: 2rem;
@@ -33,6 +29,7 @@
   --text-6xl: 6rem;
 
   --font-regular: 400;
+  --font-medium: 500;
   --font-semibold: 600;
   --font-bold: 700;
 
@@ -44,20 +41,16 @@
   --rounded-4xl: 2.4rem;
   --rounded-full: 50rem;
 
+  /* Aca estoy usando 62.5% para setear el font-root*/
   --spacing-1: 0.4rem;
-  --spacing-1-5: 0.6rem;
   --spacing-2: 0.8rem;
-  --spacing-2-5: 1rem;
   --spacing-3: 1.2rem;
-  --spacing-3-5: 1.4rem;
   --spacing-4: 1.6rem;
   --spacing-5: 2rem;
   --spacing-6: 2.4rem;
   --spacing-7: 2.8rem;
   --spacing-8: 3.2rem;
-  --spacing-9: 3.6rem;
   --spacing-10: 4rem;
-  --spacing-11: 4.4rem;
   --spacing-12: 4.8rem;
   --spacing-14: 5.6rem;
   --spacing-16: 6.4rem;
@@ -67,4 +60,28 @@
   --spacing-32: 12.8rem;
   --spacing-36: 14.4rem;
   --spacing-40: 16rem;
+  --spacing-44: 17.6rem;
+  --spacing-48: 19.2rem;
+  --spacing-52: 20.8rem;
+
+  --text-level-1: var(--gray-50);
+  --text-level-2: var(--gray-300);
+  --text-level-2-hover: var(--gray-50);
+
+  --action-level-1: var(--gray-50);
+  --action-level-1-hover: var(--primary-20);
+  --action-level-2: var(--gray-300);
+  --action-level-2-hover: var(--gray-50);
+  --action-level-3: var(--primary-20);
+
+  --icon-level-1: var(--gray-50);
+  --icon-level-2: var(--primary-20);
+
+  --background-level-1: var(--gray-900);
+  --background-level-2: var(--gray-700);
+  --background-level-3: var(--gray-600);
+  --background-opacity: var(--gray-900-96);
+
+  --border: var(--gray-600);
+  --border-hover: var(--primary-20);
 }

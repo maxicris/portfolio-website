@@ -3,6 +3,10 @@
   .nav {
     padding: 0 var(--spacing-9) 0 var(--spacing-16);
   }
+  .nav-desktop {
+    width: 100%;
+    padding: 0 var(--spacing-16);
+  }
   /* ------------ Section Header ------------- */
   .section-header {
     margin: var(--spacing-28) var(--spacing-16) var(--spacing-40);
@@ -22,7 +26,6 @@
     height: 50%;
   }
 }
-
 /* ----------- Tablet & Mobile ----------- */
 @media screen and (max-width: 1023px) {
   body {

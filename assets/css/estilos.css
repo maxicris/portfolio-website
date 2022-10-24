@@ -2,14 +2,18 @@
   font-size: var(--text-6xl);
   font-weight: var(--font-bold);
   line-height: 88px;
+  color: var(--text-level-1);
 }
 .headline-2 {
   font-size: var(--text-5xl);
   font-weight: var(--font-bold);
+  color: var(--text-level-1);
 }
 .headline-3 {
   font-size: var(--text-4xl);
+  line-height: var(--spacing-10);
   font-weight: var(--font-bold);
+  color: var(--text-level-1);
 }
 .subtitle-1 {
   font-size: var(--text-3xl);
@@ -20,11 +24,13 @@
   font-size: var(--text-2xl);
   font-weight: var(--font-regular);
   line-height: 36px;
+  color: var(--text-level-2);
 }
 .body-1 {
   font-size: var(--text-xl);
   font-weight: var(--font-regular);
   line-height: 30px;
+  color: var(--text-level-2);
 }
 .body-2 {
   font-size: var(--text-lg);
@@ -34,9 +40,20 @@
   font-size: var(--text-base);
   font-weight: var(--font-bold);
 }
-.body-3-semibold {
+.label-level-1 {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--action-level-2);
+}
+.label-level-2 {
   font-size: var(--text-base);
-  font-weight: var(--font-semibold);
+  font-weight: var(--font-medium);
+  color: var(--action-level-1);
+}
+.label-level-3 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  color: var(--action-level-3);
 }
 .body-3-regular {
   font-size: var(--text-base);
@@ -50,8 +67,11 @@
   background: -webkit-linear-gradient(
     5deg,
     var(--primary-00),
-    var(--primary-40)
+    var(--primary-20)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.icon-level-2 {
+  stroke: var(--icon-level-2);
 }
