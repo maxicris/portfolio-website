@@ -1,31 +1,73 @@
-.h1-about {
-  color: var(--secondary-400);
-}
 .about {
   display: flex;
-  gap: var(--spacing-20);
+  gap: var(--spacing-28);
   width: 124rem;
   margin: 6.4rem auto;
 }
 .about img {
   width: 40%;
+  height: 100%;
   border-radius: var(--rounded-2xl);
+  margin-top: 20px;
 }
 .about-description {
-  width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 45%;
 }
-.about-description h1 {
-  font-size: var(--text-5xl);
-  font-weight: var(--font-bold);
-  margin-bottom: var(--spacing-5);
+
+/* --------- Comienzo del Other Projects --------- */
+.other-projects {
+  width: 50%;
+  min-width: 750px;
+  display: flex;
+  gap: var(--spacing-8);
+  flex-direction: column;
+  justify-content: center;
+  margin: var(--spacing-20) auto;
 }
-.about-description p {
-  font-size: var(--text-lg);
-  font-weight: var(--font-medium);
-  color: var(--gray-700);
-  margin-bottom: var(--spacing-6);
+.container-next-projects {
+  display: flex;
+  height: 100%;
+  gap: var(--spacing-10);
 }
-.about-description .paragraph-bold {
-  font-weight: var(--font-semibold);
-  color: var(--secondary-300);
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  border-radius: var(--rounded-4xl);
+  background-color: var(--background-level-2);
+  border: 2px solid var(--border);
+  padding: var(--spacing-7) var(--spacing-10);
+  transition: all 400ms ease;
+  position: relative;
+  left: 0px;
+  text-decoration: none;
+}
+.card-exploring {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+.exploring-right {
+  align-items: end;
+}
+.next-left-hover:hover {
+  cursor: pointer;
+  position: relative;
+  left: -8px;
+  border: 2px solid var(--border-hover);
+}
+.next-right-hover:hover {
+  cursor: pointer;
+  position: relative;
+  left: 8px;
+  border: 2px solid var(--border-hover);
+}
+.button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
 }

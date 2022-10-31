@@ -20,6 +20,12 @@
   font-weight: var(--font-semibold);
   color: var(--text-level-1);
 }
+.subtitle-2-semibold {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  line-height: 36px;
+  color: var(--text-level-1);
+}
 .subtitle-2 {
   font-size: var(--text-2xl);
   font-weight: var(--font-regular);
@@ -72,6 +78,25 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.gradient-ui-desktop {
+  background: -webkit-linear-gradient(5deg, #ceab93, #e3caa5);
+}
+.gradient-ui-mobile {
+  background: -webkit-linear-gradient(
+    5deg,
+    var(--primary-00),
+    var(--primary-20)
+  );
+}
+.gradient-ui-motion {
+  background: -webkit-linear-gradient(5deg, #ceab93, #e3caa5);
+}
+.gradient-frutti-stop {
+  background: -webkit-linear-gradient(5deg, #ceab93, #e3caa5);
+}
 .icon-level-2 {
   stroke: var(--icon-level-2);
+}
+.icon-level-3 {
+  stroke: var(--icon-level-3);
 }

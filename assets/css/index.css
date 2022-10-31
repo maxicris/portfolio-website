@@ -16,7 +16,7 @@ body {
   height: fit-content;
   background-color: var(--background-level-1);
   font-family: "Poppins", sans-serif;
-  animation: fadeInAnimation ease 1.5s;
+  animation: fadeInAnimation ease 1s;
   animation-fill-mode: forwards;
   position: relative;
 }
@@ -47,7 +47,7 @@ body {
   transition: 0.3s ease-out;
   transform: translateY(0px);
   border-bottom: 1px solid var(--border);
-  background-color: var(--background-opacity);
+  background-color: var(--background-opacity-96);
 }
 .background-nav-none {
   background-color: transparent;
@@ -108,7 +108,7 @@ body {
 .networking-container {
   display: flex;
   justify-content: space-between;
-  width: 47%;
+  width: 45%;
   animation: fadeInAnimation2 ease 3.5s;
 }
 .network-link {
@@ -138,6 +138,7 @@ body {
 .networking-container a:hover svg path {
   /* Color Icons Hover*/
   fill: var(--action-level-1-hover);
+  margin-left: 16px;
 }
 .background-hero {
   position: absolute;
@@ -150,12 +151,32 @@ body {
 /* ------------- Main ------------- */
 .main-container {
   display: flex;
+  flex-direction: column;
   width: 124rem;
   margin: auto;
-  gap: var(--spacing-12);
+  gap: var(--spacing-8);
 }
 .main-container a {
   text-decoration: none;
+}
+.section {
+  display: flex;
+  gap: var(--spacing-8);
+}
+.border-gradient {
+  position: relative;
+  background: linear-gradient(140deg, var(--gray-600), var(--gray-400));
+  padding: 2px;
+  border-radius: var(--rounded-4xl);
+  transition: all 300ms ease;
+  position: relative;
+  top: 0px;
+}
+.border-gradient:hover {
+  cursor: pointer;
+  position: relative;
+  top: -6px;
+  background: var(--border-hover);
 }
 .project-container {
   width: 100%;
@@ -165,22 +186,14 @@ body {
   flex-direction: column;
   gap: var(--spacing-7);
   transition: all 400ms ease;
-  position: relative;
   padding: var(--spacing-8);
-  top: 0px;
   border-radius: var(--rounded-4xl);
   background-color: var(--background-level-2);
-  border: 2px solid var(--border);
-}
-.card-hover:hover {
-  cursor: pointer;
-  position: relative;
-  top: -8px;
-  border: 2px solid var(--border-hover);
 }
 .coming-soon {
   background-color: var(--gray-180);
   cursor: initial;
+  border: 2px solid var(--border);
 }
 .project-img {
   display: flex;
@@ -188,11 +201,6 @@ body {
 .project-img img {
   width: 100%;
   border-radius: var(--rounded-2xl);
-  background: -webkit-linear-gradient(
-    5deg,
-    var(--primary-00),
-    var(--primary-20)
-  );
 }
 .project-description {
   display: flex;

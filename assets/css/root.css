@@ -10,6 +10,7 @@
   --gray-700: #19191c;
   --gray-800: #141416;
   --gray-900: #0d0d0e;
+  --gray-900-70: #18181bb3;
   --gray-900-96: #19191cf5;
 
   --primary-00: #6bb0ff;
@@ -76,11 +77,13 @@
 
   --icon-level-1: var(--gray-50);
   --icon-level-2: var(--primary-20);
+  --icon-level-3: var(--gray-400);
 
   --background-level-1: var(--gray-900);
   --background-level-2: var(--gray-700);
   --background-level-3: var(--gray-600);
-  --background-opacity: var(--gray-900-96);
+  --background-opacity-70: var(--gray-900-70);
+  --background-opacity-96: var(--gray-900-96);
 
   --border: var(--gray-600);
   --border-hover: var(--primary-20);
