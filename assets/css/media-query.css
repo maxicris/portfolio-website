@@ -22,9 +22,6 @@
   .project-description {
     width: 100%;
   }
-  .project-img {
-    height: 50%;
-  }
 }
 /* ----------- Tablet & Mobile ----------- */
 @media screen and (max-width: 1023px) {

@@ -1,19 +1,14 @@
-.nav {
-  border-bottom: 1px solid var(--border);
-  background-color: var(--background-opacity-96);
-}
 .main-container {
   display: flex;
   flex-direction: column;
-  margin-top: 20rem;
+  margin-top: var(--spacing-16);
 }
-.portada {
-  /* width: 94%; */
-  margin: -100px auto;
-}
-.portadaimg {
-  width: 100%;
-  /* border-radius: var(--rounded-2xl); */
+.header {
+  margin: var(--spacing-16) auto 0;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  min-width: 750px;
 }
 .shots {
   width: 90%;
@@ -24,15 +19,11 @@ article {
 }
 .container-article {
   width: 100%;
-  background: -webkit-linear-gradient(
-    5deg,
-    var(--primary-00),
-    var(--primary-20)
-  );
-  padding: var(--spacing-14);
+  padding: var(--spacing-16) 0;
   display: flex;
   justify-content: center;
   border-radius: var(--rounded-4xl);
+  background-color: var(--primary-0);
 }
 .container-article img {
   border-radius: var(--rounded-2xl);

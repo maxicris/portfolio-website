@@ -39,7 +39,7 @@
   height: 100%;
   border-radius: var(--rounded-4xl);
   background-color: var(--background-level-2);
-  border: 2px solid var(--border);
+  border: 2px solid var(--border-level-1);
   padding: var(--spacing-7) var(--spacing-10);
   transition: all 400ms ease;
   position: relative;

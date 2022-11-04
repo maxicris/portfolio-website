@@ -13,8 +13,9 @@
   --gray-900-70: #18181bb3;
   --gray-900-96: #19191cf5;
 
+  --primary-0: #9393e2;
   --primary-00: #6bb0ff;
-  --primary-20: #3387e9;
+  --primary-20: #64a0e6;
   --primary-40: #0a62c7;
   --primary-60: #0f4a8e;
   --primary-80: #0a315f;
@@ -85,6 +86,7 @@
   --background-opacity-70: var(--gray-900-70);
   --background-opacity-96: var(--gray-900-96);
 
-  --border: var(--gray-600);
+  --border-level-1: var(--gray-600);
+  --border-level-2: var(--gray-500);
   --border-hover: var(--primary-20);
 }
