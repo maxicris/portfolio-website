@@ -28,7 +28,7 @@
 }
 .subtitle-2 {
   font-size: var(--text-2xl);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-medium);
   line-height: 36px;
   color: var(--text-level-2);
 }
@@ -41,6 +41,7 @@
 .body-2 {
   font-size: var(--text-lg);
   font-weight: var(--font-regular);
+  color: var(--text-level-2);
 }
 .body-3-bold {
   font-size: var(--text-base);
@@ -48,18 +49,22 @@
 }
 .label-level-1 {
   font-size: var(--text-sm);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semibold);
   color: var(--action-level-2);
 }
 .label-level-2 {
   font-size: var(--text-base);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semibold);
   color: var(--action-level-1);
 }
 .label-level-3 {
   font-size: var(--text-lg);
   font-weight: var(--font-medium);
   color: var(--action-level-3);
+}
+.body-3-medium {
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
 }
 .body-3-regular {
   font-size: var(--text-base);
@@ -72,30 +77,14 @@
 .gradient-text {
   background: -webkit-linear-gradient(
     5deg,
-    var(--primary-00),
-    var(--primary-20)
+    var(--primary-300),
+    var(--primary-500)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient-disabled {
   background: -webkit-linear-gradient(5deg, var(--gray-600), var(--gray-700));
-}
-.gradient-ui-mobile {
-  background: -webkit-linear-gradient(
-    5deg,
-    var(--primary-00),
-    var(--primary-20)
-  );
-}
-.gradient-ui-desktop {
-  background: -webkit-linear-gradient(5deg, #e49667, #e58248);
-}
-.gradient-ui-motion {
-  background: -webkit-linear-gradient(5deg, #ceab93, #e3caa5);
-}
-.gradient-frutti-stop {
-  background: -webkit-linear-gradient(5deg, #ceab93, #e3caa5);
 }
 .icon-level-2 {
   stroke: var(--icon-level-2);
