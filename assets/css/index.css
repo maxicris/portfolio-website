@@ -60,6 +60,10 @@ body {
   letter-spacing: 0.2px;
   font-weight: var(--font-bold);
   text-decoration: none;
+  transition: all 500ms ease;
+}
+.logo:hover {
+  color: var(--primary-400);
 }
 .links-container {
   display: flex;
@@ -78,7 +82,7 @@ body {
 }
 .links-container a:hover {
   color: var(--text-level-2-hover);
-  background-color: var(--background-level-3);
+  background-color: var(--background-level-2);
 }
 /* ------------ Section Header ------------- */
 .section-header {

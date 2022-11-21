@@ -14,6 +14,7 @@
   --gray-900: #26262a;
   --gray-900-70: #18181bb3;
 
+  --primary-200-50: #8dbdff66;
   --primary-200: #8dbcff;
   --primary-300: #549bff;
   --primary-400: #1b7aff;
@@ -69,7 +70,7 @@
 
   --text-level-1: var(--gray-900);
   --text-level-2: var(--gray-700);
-  --text-level-2-hover: var(--gray-00);
+  --text-level-2-hover: var(--primary-400);
 
   --action-level-1: var(--gray-700);
   --action-level-1-hover: var(--primary-500);
