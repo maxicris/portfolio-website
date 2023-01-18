@@ -30,4 +30,6 @@ article {
 }
 .main-container {
   gap: var(--spacing-16);
+  animation: FadeTransition ease 2s;
+  animation-fill-mode: forwards;
 }

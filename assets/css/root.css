@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --gray-00: rgb(255, 255, 255);
+  --gray-00: #ffffff;
   --gray-50: #f7f7fa;
   --gray-50-96: #f7f7faf5;
   --gray-100: #dadade;
@@ -12,7 +12,6 @@
   --gray-700: #4c4c54;
   --gray-800: #3c3c42;
   --gray-900: #26262a;
-  --gray-900-70: #18181bb3;
 
   --primary-200-50: #8dbdff66;
   --primary-200: #8dbcff;
