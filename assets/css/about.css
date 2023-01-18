@@ -1,3 +1,7 @@
+.main-container {
+  animation: FadeTransition ease 2s;
+  animation-fill-mode: forwards;
+}
 .about {
   display: flex;
   gap: var(--spacing-28);
