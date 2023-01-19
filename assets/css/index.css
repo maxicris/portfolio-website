@@ -85,31 +85,34 @@ body {
 .section-header {
   display: flex;
   width: 124rem;
-  margin: var(--spacing-40) auto var(--spacing-40);
+  margin: var(--spacing-36) auto var(--spacing-44);
 }
 .section-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  width: 100%;
   animation: FadeTransition ease 1.2s;
 }
 .h1-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-left: -2px;
 }
 .section-container span {
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
 }
 .section-header .paragraph {
   display: flex;
-  margin-bottom: var(--spacing-10);
+  margin: var(--spacing-5) 0 var(--spacing-10) 0;
   width: 60%;
+  text-align: center;
 }
 .networking-container {
   display: flex;
   justify-content: space-between;
-  width: 42%;
+  width: 36%;
   animation: FadeTransitionLarge ease 2s;
 }
 .network-link {

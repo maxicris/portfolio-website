@@ -11,7 +11,7 @@
   --gray-600: #5d5d66;
   --gray-700: #4c4c54;
   --gray-800: #3c3c42;
-  --gray-900: #26262a;
+  --gray-900: rgb(54, 54, 54);
 
   --primary-200-50: #8dbdff66;
   --primary-200: #8dbcff;
@@ -30,6 +30,7 @@
   --text-4xl: 3.6rem;
   --text-5xl: 4.8rem;
   --text-6xl: 6rem;
+  --text-7xl: 8.8rem;
 
   --font-regular: 400;
   --font-medium: 500;
