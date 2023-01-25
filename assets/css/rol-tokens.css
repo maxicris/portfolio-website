@@ -13,7 +13,11 @@
   line-height: var(--spacing-12);
   font-weight: var(--font-bold);
 }
-.subtitle-1 {
+.subtitle-1-bold {
+  font-size: var(--font-size-30);
+  font-weight: var(--font-bold);
+}
+.subtitle-1-semibold {
   font-size: var(--font-size-30);
   font-weight: var(--font-semibold);
 }
@@ -77,19 +81,24 @@
   font-weight: var(--font-bold);
 }
 .label-level-1 {
-  font-size: var(--font-size-16);
+  font-size: var(--font-size-14);
   font-weight: var(--font-semibold);
   color: var(--action-level-2);
 }
 .label-level-2 {
   font-size: var(--font-size-16);
   font-weight: var(--font-semibold);
-  color: var(--action-level-3);
+  color: var(--action-level-2);
 }
 .label-level-3 {
   font-size: var(--font-size-18);
   font-weight: var(--font-medium);
   color: var(--action-level-3);
+}
+.base-16px-semibold {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-semibold);
+  line-height: 24px;
 }
 .body-3-medium {
   font-size: var(--font-size-16);
@@ -98,6 +107,11 @@
 .body-3-regular {
   font-size: var(--font-size-16);
   font-weight: var(--font-regular);
+}
+.small-14px-semibold {
+  font-size: var(--font-size-14);
+  font-weight: var(--font-semibold);
+  line-height: 20px;
 }
 .body-4 {
   font-size: var(--font-size-14);
@@ -128,8 +142,12 @@
   border: 1px solid var(--border-level-1);
 }
 .border-level-1:hover {
-  border: 1px solid var(--border-level-1-hover);
+  border: 1px solid var(--border-level-2-hover);
 }
+/* .border-level-2:hover {
+  border: 1px solid var(--border-level-2-hover);
+} */
+
 /* Color Background Tokens ================================ */
 
 --background-level-1: var(--gray-00);

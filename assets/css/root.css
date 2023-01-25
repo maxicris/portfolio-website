@@ -1,7 +1,7 @@
 :root {
   /* Color =================================================== */
 
-  --gray-00: #ffffff;
+  --gray-00: rgb(252, 252, 255);
   --gray-50: #f5f5f5;
   --gray-50-96: #f7f7faf5;
   --gray-100: #dadade;
@@ -34,8 +34,9 @@
 
   /* Color Border Tokens ==================================== */
 
-  --border-level-1: var(--gray-150);
+  --border-level-1: var(--gray-00);
   --border-level-1-hover: var(--gray-200);
+  --border-level-2-hover: var(--primary-200-50);
 
   /* Color Background Tokens ================================ */
 
