@@ -207,7 +207,7 @@ body {
   width: 124rem;
   margin: auto;
   gap: var(--spacing-8);
-  /* animation: FadeTransitionLarge ease 3.5s; */
+  animation: FadeTransitionLarge ease 3.5s;
   animation-fill-mode: forwards;
 }
 .main-container a {
