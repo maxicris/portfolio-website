@@ -56,3 +56,16 @@
     color: var(--gray-140);
   }
 }
+@media screen and (max-width: 560px) {
+  .div p {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .name {
+    display: none;
+  }
+  .div2 p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
