@@ -17,6 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-family: "Libre Baskerville", serif;
   position: relative;
+  background-color: #131212;
 }
 .div {
   display: flex;
@@ -28,6 +29,7 @@ body {
   overflow: hidden;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/portfolio-b9631.appspot.com/o/Background.png?alt=media&token=54e57d4e-2653-4152-a4e3-be9232834a44&_gl=1*1wmsuxh*_ga*MTE4ODE3NjI5MS4xNjgzMTY2NDU3*_ga_CW55HF8NVT*MTY4NTkyNTY1MS4zLjEuMTY4NTkyNTczNy4wLjAuMA..);
   background-size: cover;
+  animation: Transition ease 3.5s;
 }
 .div p {
   color: var(--gray-100);
@@ -356,6 +358,14 @@ body {
 }
 
 /* --------- Animations/Transitions --------- */
+@keyframes Transition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes FadeTransition {
   from {
     opacity: 0;
